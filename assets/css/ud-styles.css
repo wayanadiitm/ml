@@ -2267,6 +2267,14 @@ p {
   background: #03689b;
 }
 
+.ud-blog-share-links a.youtube {
+  background: #007ab9;
+}
+
+.ud-blog-share-links a.youtube:hover {
+  background: #03689b;
+}
+
 .ud-blog-sidebar {
   padding-top: 60px;
 }
