@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo-2.svg";
+      logo.src = "https://cdn-icons-png.flaticon.com/128/10817/10817404.png";
     } else {
-      logo.src = "assets/images/logo/logo.svg";
+      logo.src = "https://cdn-icons-png.flaticon.com/128/10817/10817404.png";
     }
 
     // show or hide the back-top-top button
