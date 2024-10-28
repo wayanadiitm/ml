@@ -1,0 +1,16 @@
+# Redirects from what the browser requests to what we serve
+# /login             https://logicloom.iitmparadox.org
+# /qumos             https://logicloom.iitmparadox.org/internalapp/home.php
+# /register          https://margazhi.iitmparadox.org/events/technicals/17/register
+# /rules             https://docs.google.com/document/d/1KdGQGpmP-bQCnYBq3JkHOvFktHJPmYjxmn9TJkM-ZLE/edit?usp=sharing
+# /rule              https://docs.google.com/document/d/1KdGQGpmP-bQCnYBq3JkHOvFktHJPmYjxmn9TJkM-ZLE/edit?usp=sharing
+# /rulebook          https://docs.google.com/document/d/1KdGQGpmP-bQCnYBq3JkHOvFktHJPmYjxmn9TJkM-ZLE/edit?usp=sharing
+# /brochure          https://logicloom.netlify.app
+# /banner            https://logicloom.netlify.app/assets/img/banners/1.png
+# /launch            https://www.youtube.com/live/G3KeUj40ges?feature=shared
+# /internaldoc       https://docs.google.com/document/d/11GBGKKFiRkxwoVXvvfLx6FHCTJ2tA3OhoeBpHR_VWHQ/edit?usp=sharing
+# /feedback          https://docs.google.com/forms/d/e/1FAIpQLSd5M9UBQDwgRDu3cAaWr5Z53y_XsZdKrCi59N2xhNxEGP9U3g/viewform?usp=sf_link
+# /warmup            https://docs.google.com/forms/d/e/1FAIpQLSdFs36WbP88iA274aoc_9_9hWy2CbkhR0oqOuhHSbRYD16HRw/viewform?usp=sf_link
+# /round2            https://logicloom.iitmparadox.org/login.php
+# /finals-resources  https://docs.google.com/document/d/1owww0o52RmyKAi3uTBQVV0I-ifVe2aAMx4lFod-lpRk/edit?usp=sharing
+# /feedback2         https://forms.gle/sBhrwKPsqmiXoUcm6
