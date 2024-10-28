@@ -67,6 +67,28 @@
     font-size: 30px;
     cursor: pointer;
 }
+   .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
  </style>
 </head>
   <body>
@@ -168,6 +190,8 @@
 <div id="lightbox" class="lightbox" style="display:none;">
         <span class="close" onclick="closeLightbox()">&times;</span>
         <img class="lightbox-content" id="lightboxImage">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
     </div>      
     </section>
 
@@ -337,25 +361,39 @@
       window.document.addEventListener("scroll", onScroll);
     </script>
     <script>
-      // Function to open the lightbox
-function openLightbox(imageSrc) {
+     let currentIndex = 0;
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+function openLightbox(imageSrc, index) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     lightboxImage.src = imageSrc;
     lightbox.style.display = 'flex';
+    currentIndex = index; // Save the current index
 }
 
-// Function to close the lightbox
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none';
 }
 
+function changeImage(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = galleryItems.length - 1; // Loop to the last image
+    } else if (currentIndex >= galleryItems.length) {
+        currentIndex = 0; // Loop to the first image
+    }
+
+    const newImageSrc = galleryItems[currentIndex].src;
+    document.getElementById('lightboxImage').src = newImageSrc;
+}
+
 // Add click event listeners to gallery items
-const galleryItems = document.querySelectorAll('.gallery-item');
-galleryItems.forEach(item => {
+galleryItems.forEach((item, index) => {
     item.addEventListener('click', () => {
-        openLightbox(item.src);
+        openLightbox(item.src, index); // Pass the index
     });
 });
     </script>
