@@ -1,0 +1,500 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google" content="notranslate" />
+<meta content="eventwebteam" name="author">
+<meta name="msapplication-tap-highlight" content="no">
+<title>LogicLooM 2.0</title>
+<meta content="Welcome to the webpage for LogicLooM 2.0, one of the best technical events at Paradox, May 2024" name="description">
+<meta content="logicloom,logic,ai,ml,coding,aptitude,criticalthinking,outofthebox,learning,contest,iitm,paradox,offline,campus" name="keywords">
+<meta property="og:title" content="LogicLooM 2.0 (Paradox May 2024)" />
+<meta property="og:type" content="website"/>  
+<meta property="og:description" content="Welcome to the webpage for LogicLooM 2.0, one of the best technical events at Paradox, May 2024"/>
+<meta property="og:url" content="https://logicloom.netlify.app/v2"/>
+<meta property="og:image" content="https://logicloom.netlify.app/v2/assets/wiselogo.png"/>
+<link href="https://logicloom.netlify.app/v2/assets/wiselogo.png" rel="icon">
+<link href="https://logicloom.netlify.app/v2/assets/wiselogo.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.26.0/dist/tsparticles.min.js"></script>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>  
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@300;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: radial-gradient(
+      circle at 20% 100%,
+      rgba(184, 184, 184, 0.1) 0%,
+      rgba(184, 184, 184, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 99%
+    ),
+    linear-gradient(40deg, #040a22, #162561, #202e64, #6f7aa6);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  place-items: center;
+  gap: 60px;
+  min-height: 100vh;
+  padding: 20px 60px;
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 2400px;
+}
+
+.content h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.content p {
+  font-size: clamp(1rem, 4vw, 1.1rem);
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.content button {
+  background: #eaeaea;
+  color: #202134;
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  padding: 8px 14px;
+  border-radius: 7px;
+  transform: scale(1);
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+.content button:is(:hover, :focus) {
+  transform: scale(0.98);
+  background-color: #6f7aa6;
+  color: #eaeaea;
+}
+
+/* SLIDER */
+
+.swiper {
+  position: relative;
+  width: 400px;
+  height: 490px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  user-select: none;
+  border-radius: 20px;
+}
+
+.cost {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 6px 10px;
+  color: #fff;
+  font-size: clamp(0.8rem, 4vw, 0.9rem);
+  font-weight: 600;
+}
+
+.dark-text {
+  color: #202134;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  background: rgba(93, 95, 145, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.overlay h1 {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-weight: 600;
+}
+
+.overlay p {
+  font-size: clamp(0.8rem, 4vw, 0.9rem);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.ratings {
+  display: flex;
+  column-gap: 10px;
+  margin-top: -6px;
+}
+
+.ratings span {
+  font-size: clamp(0.8rem, 4vw, 0.9rem);
+  font-weight: 300;
+}
+
+.star {
+  color: #afe312;
+}
+
+@media (max-width: 1050px) {
+  .swiper {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 930px) {
+  section {
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 40%;
+    grid-template-areas:
+      "slider"
+      "content";
+    place-items: center;
+    gap: 64px;
+    padding: 60px;
+  }
+
+  .swiper {
+    grid-area: slider;
+  }
+
+  .content {
+    grid-area: content;
+    text-align: center;
+  }
+
+  .content h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  section {
+    padding: 40px 40px 60px;
+  }
+
+  .swiper {
+    width: 300px;
+    height: 400px;
+  }
+}  
+</style>
+<style type="text/css">.disclaimer { display: none; }</style>
+<style>img[alt="www.000webhost.com"]{display:none;}</style>
+</head>
+ <body>
+    <div id="tsparticles"></div>
+    <section>
+      <div class="content">
+        <h1>We're back!</h1>
+        <p>
+          Are you ready? Meanwhile take a look at the amazing debut of LogicLooM at Paradox in Margazhi 2024
+        </p>
+        <a href=""><button>Explore</button></a>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/assets/img/banners/feedback2.jpg" />
+            <div class="cost">Winner Feedback</div>
+            <div class="overlay">
+              <h1>Gobalakrishnan V</h1>
+              <p>
+                Attempted many technical events in various editions of Paradox. LogicLooM tops them all.
+                Good support, amazing coordination and overall an excellent event. Kudos to the organizers. Will
+                be looking forward to future events.
+              </p>
+              <div class="ratings">
+                <div class="stars">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                </div>
+                <span>45 reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/img/banners/feedback1.jpg" />
+            <div class="cost">Finalist Feedback</div>
+            <div class="overlay">
+              <h1>Siddharth</h1>
+              <p>
+                Warmup questions were like jalebi:) They wrapped around twisting it multiple times. Round2 was hard! We scratched our head for 2.5 hours
+                and did what we could. In this process, we definitely learnt a lot. Thanks to LogicLooM team
+                for organizing such a great event. Had too much fun and learning.
+              </p>
+              <div class="ratings">
+                <div class="stars">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-half-outline"></ion-icon>
+                </div>
+                <span>99 reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/img/banners/feedback3.jpeg" />
+            <div class="cost dark-text">What Participants Say!</div>
+            <div class="overlay">
+              <h1>Niraj</h1>
+              <p>
+                I realized that my problem solving skills are below par and I should work on them. The contest
+                motivated and showed a mirror to me. I hope to participate in LogicLooM again with an improved
+                version of myself. Thanks a lot to the organizers!
+              </p>
+              <div class="ratings">
+                <div class="stars">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                </div>
+                <span>54 reviews</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/img/banners/feedback4.jpg" />
+            <div class="cost dark-text">What Participants Say!</div>
+            <div class="overlay">
+              <h1>Manish Kumar</h1>
+              <p>
+               Firstly it was very unique from any other event. It was thought-provoking, challenging and helped me think out of the box.
+                Loved it and would request to conduct the event every year.
+              </p>
+              <div class="ratings">
+                <div class="stars">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <ion-icon class="star" name="star-half-outline"></ion-icon>
+                </div>
+                <span>71 reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+var swiper = new Swiper(".swiper", {
+  effect: "cube",
+  grabCursor: true,
+  loop: true,
+  speed: 1000,
+  cubeEffect: {
+    shadow: false,
+    slideShadows: true,
+    shadowOffset: 10,
+    shadowScale: 0.94,
+  },
+  autoplay: {
+    delay: 2600,
+    pauseOnMouseEnter: true,
+  },
+});
+
+tsParticles.load("tsparticles", {
+  fpsLimit: 60,
+  backgroundMode: {
+    enable: true,
+    zIndex: -1,
+  },
+  particles: {
+    number: {
+      value: 30,
+      density: {
+        enable: true,
+        area: 800,
+      },
+    },
+    color: {
+      value: [
+        "#3998D0",
+        "#2EB6AF",
+        "#A9BD33",
+        "#FEC73B",
+        "#F89930",
+        "#F45623",
+        "#D62E32",
+      ],
+    },
+    destroy: {
+      mode: "split",
+      split: {
+        count: 1,
+        factor: {
+          value: 5,
+          random: {
+            enable: true,
+            minimumValue: 4,
+          },
+        },
+        rate: {
+          value: 10,
+          random: {
+            enable: true,
+            minimumValue: 5,
+          },
+        },
+        particles: {
+          collisions: {
+            enable: false,
+          },
+          destroy: {
+            mode: "none",
+          },
+          life: {
+            count: 1,
+            duration: {
+              value: 1,
+            },
+          },
+        },
+      },
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        sides: 5,
+      },
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      animation: {
+        enable: false,
+        speed: 1,
+        minimumValue: 0.1,
+        sync: false,
+      },
+    },
+    size: {
+      value: 8,
+      random: {
+        enable: true,
+        minimumValue: 4,
+      },
+      animation: {
+        enable: false,
+        speed: 40,
+        minimumValue: 0.1,
+        sync: false,
+      },
+    },
+    collisions: {
+      enable: true,
+      mode: "destroy",
+    },
+    move: {
+      enable: true,
+      speed: 7,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+  detectRetina: true,
+});  
+</script>
+<script language=JavaScript>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+</script>   
+  </body>
+</html>

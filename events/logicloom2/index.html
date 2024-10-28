@@ -1,0 +1,798 @@
+﻿
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google" content="notranslate" />
+<meta content="eventwebteam" name="author">
+<meta name="msapplication-tap-highlight" content="no">
+<title>LogicLooM 2.0 - IITM Paradox</title>
+<meta content="Welcome to the webpage for LogicLooM 2.0, one of the best technical events at Paradox, May 2024" name="description">
+<meta content="logicloom,logic,ai,ml,coding,aptitude,criticalthinking,outofthebox,learning,contest,iitm,paradox,offline,campus" name="keywords">
+<meta property="og:title" content="LogicLooM 2.0 - IITM Paradox 2024" />
+<meta property="og:type" content="website"/>  
+<meta property="og:description" content="Welcome to the webportal for LogicLooM 2.0, one of the best technical events at Paradox, May 2024"/>
+<meta property="og:url" content="https://logicloom.iitmparadox.org"/>
+<meta property="og:image" content="https://logicloom.iitmparadox.org/assets/wiselogo.png"/>
+<link href="https://logicloom.iitmparadox.org/assets/wiselogo.png" rel="icon">
+<link href="https://logicloom.iitmparadox.org/assets/wiselogo.png" rel="apple-touch-icon">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+<link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="/assets/style.css" rel="stylesheet">
+<style>
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        a.blink {
+            animation: blink 2s infinite;
+        }
+  #blink {
+            animation: blink 2s infinite;
+        }
+    </style>
+   <style>
+        .rounded-span {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: #5cb85c;
+            color: white;
+            animation: blink 2s infinite;
+        }
+    </style>
+<style>
+::-webkit-scrollbar {
+-webkit-appearance: none;
+}
+::-webkit-scrollbar {
+width: 7px;
+}
+::-webkit-scrollbar-track {
+background: transparent; 
+border:0px solid #fff;
+} 
+::-webkit-scrollbar-thumb {
+background: #FC6A03; 
+border:0px solid #fff;
+height:300px;
+border-radius:5px;
+}	
+</style>    
+<style>
+/* CSS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: #aaa;
+  align-self: flex-end;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image-content {
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.accept-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+</style>
+<style>
+    #alert {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: none;
+      max-width: 300px;
+      z-index: 1000; /* Adjust the z-index based on your layout */
+      opacity: 0;
+      animation: fadeInOut 5s ease-in-out;
+    }
+
+    /* Style the close button */
+    #alert .close {
+      cursor: pointer;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      25% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      75% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+  </style> 	
+    <style type="text/css">.disclaimer { display: none; }</style>
+<style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+</head>
+
+<body><div class="cursor"></div><div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="bi bi-x-square-fill"></i></span>
+    <div class="header" style="color:#BF0A30;">Participants Portal</div>
+    <div class="description">
+      <p>Please sign in with your registered account.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="/" class="scrollto"><img src="assets/wiselogo.png" alt="LogicLooM" title="LogicLooM 2.0"></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li class="dropdown"><a href="#" onclick="return false;"><span>Details</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/rules.html">Rule Book</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="/team.html">Meet the Team</a></li>
+            <li><a href="/speakers.html">Meet Our Speakers</a></li>
+            <li><a href="/feedback.html">What Students Say!</a></li>
+          </ul>
+        </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+  </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+<!--#Experience--><img src="https://logicloom.netlify.app/storage/paradoxtextlogo.png" style="width:300px;height:auto;"><h1 class="mb-4 pb-0"><span>Logic</span>L<i class="bi bi-brilliance"></i><i class="bi bi-brilliance"></i>M 2.0</h1>
+      <p class="mb-4 pb-0">May - June 2024 <i class="bi bi-dot"></i> Hybrid</p>
+      <a href="#about" class="about-btn scrollto">!pip install logic<br><br>import creativity</a>
+          <br><center><a href="?login=true" target="_blank" class="blink"><span style="color:white;font-size:17px;"><i class="bi bi-megaphone-fill"></i> Round 1 Final Slot on 19th May!</center></span></a>
+          
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>About The Event</h2>
+            <p style="text-align:justify;">
+<i class="bi bi-quote" style="font-size:18px;"></i>Hello IITians! I'm Iris, your trusty guide through the electrifying world of LogicLooM 2.0! With over 400 registrations pouring in, the excitement was palpable and the competition more fierce.
+            After the astounding success of our inaugural event, I've soared back to your campus, ready to ignite your passion for programming, artificial intelligence, and machine learning once again.
+            Prepare to be captivated as we weave together a tapestry of mind-bending challenges designed to push the boundaries of your problem-solving prowess, critical thinking, and technical ingenuity.
+            It isn't about rote memorization - it's about unleashing your creativity, embracing innovation, and thinking beyond the confines of conventional wisdom. Together, we'll embark on a journey filled with exhilarating twists and turns, where every solution is a testament to your brilliance.
+            Get ready to showcase your talents, learn from your peers, and revel in the sheer joy of unraveling complex problem statements. The stage is set, the challenges await - let's soar to new heights together!</p>
+          </div>
+
+          <div class="col-lg-4">
+            <center><h3>Event Details</h3>
+            <p>Please go through the documents first!</p>
+            <a href="/rules.html"><button style="border: 0;padding: 9px 25px;cursor: pointer;background: #f82249;color: #fff;transition: all 0.3s ease;outline: none;font-size: 14px;border-radius: 50px;"><i class="bi bi-chevron-double-right"></i> Rule Book</button></a>
+            <br><br> 
+            <a href="#faq"><button style="border: 0;padding: 9px 25px;cursor: pointer;background: #f82249;color: #fff;transition: all 0.3s ease;outline: none;font-size: 14px;border-radius: 50px;"><i class="bi bi-chevron-double-right"></i> FAQs</button></a>  
+            <br><br>
+            <i class="bi bi-award-fill rounded-span"></i> <font color="yellow">15K+ INR</font>
+             <br><br><i class="bi bi-trophy rounded-span"></i> Trophy, Cash prizes (Total 10.5K) for the top 3 teams, Exciting goodies (worth 3.3K+) for the finalists, Certificates of Appreciation for pre-finalists, Certificates of Participation<span class="blink"></span>
+ 
+            </center>
+            </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Imp Dates</h2>
+          <p></p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#all" role="tab" data-bs-toggle="tab"><i class="bi bi-calendar-week" style="font-size:16px;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#participantactivity" role="tab" data-bs-toggle="tab"><i class="bi bi-rocket-takeoff" style="font-size:16px;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#announcements" role="tab" data-bs-toggle="tab"><i class="bi bi-megaphone" style="font-size:16px;"></i></a>
+          </li>
+        </ul>
+
+        <!--<h3 class="sub-heading"></h3>-->
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Schedule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="all">
+<h3 class="sub-heading">Schedule</h3>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>17 Apr 2024 - 17 May 2024 17.00</time></div>
+              <div class="col-md-10">
+                <h4>Event Registration <span class="rounded-span" style="color:white;">LIVE</span></h4>
+                <p>Click <a href="https://iitmparadox.org/events/19" target="_blank">here</a> to register online</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10 May 2024 <i class="bi bi-dot"></i> 19:00 - 20:30</time></div>
+              <div class="col-md-10">
+                <h4>Event Launch & Orientation session</h4>
+                <p><b>Prof. Jyothi</b> from IIT Gandhinagar will be joining us! You can watch the live streaming <a href="https://www.youtube.com/watch?v=qZNhso7FnX8" target="_blank">here</a>.</p>
+              </div>
+            </div>
+            
+<div class="row schedule-item">
+              <div class="col-md-2"><time>11 and 12 May 2024 <i class="bi bi-dot"></i> 10:00 - 23:59</time></div>
+              <div class="col-md-10">
+                <h4>Prelims (Individual participation round) Phase I</h4>
+                <p><i class="bi bi-geo-alt-fill"></i> Online</p>
+              </div>
+            </div>
+<div class="row schedule-item">
+              <div class="col-md-2"><time>19 May 2024 <i class="bi bi-dot"></i> 10:00 - 23:59</time></div>
+              <div class="col-md-10">
+                <h4>Prelims Phase II (Final) <span class="rounded-span" style="color:white;">Upcoming</span></h4>
+                <p><i class="bi bi-geo-alt-fill"></i> Online</p>
+              </div>
+            </div>            
+<div class="row schedule-item">
+              <div class="col-md-2"><time>24 May 2024 <i class="bi bi-dot"></i> 19:00 - 22:00</time></div>
+              <div class="col-md-10">
+                <h4>Round 2 (Team-based)</h4>
+                <p><i class="bi bi-geo-alt-fill"></i> Online</p>
+              </div>
+            </div>
+<div class="row schedule-item">
+              <div class="col-md-2"><time>01 June 2024 <i class="bi bi-dot"></i> 09:30 - 12:30</time></div>
+              <div class="col-md-10">
+                <h4>Workshop</h4>
+                <p><i class="bi bi-geo-alt-fill"></i> ICSR Room 1, IIT Madras campus</p>
+              </div>
+            </div>
+ <div class="row schedule-item">
+              <div class="col-md-2"><time>02 June 2024 <i class="bi bi-dot"></i> 09:00 - 13:30</time></div>
+              <div class="col-md-10">
+                <h4>Finale</h4>
+                <p><i class="bi bi-geo-alt-fill"></i> ICSR Room 2, IIT Madras campus</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schedule Day 1 -->
+
+          <!-- Schedule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="participantactivity">
+<h3 class="sub-heading">Participant Activity</h3>
+
+
+          </div>
+          <!-- End Schedule Day 2 -->
+
+          <!-- Schedule Day 3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="announcements">
+<h3 class="sub-heading">Announcements</h3>
+
+<div class="row schedule-item">
+    <div class="col-md-2"><time>7 May 2024</time></div>
+              <div class="col-md-10">
+                <h4>Addressing Suggestions from Margazhi and Changes in LogicLooM! <span class="rounded-span" style="color:white;">NEW</span></h4>
+                <p><a href="https://logicloom.netlify.app/storage/changes-compiled.pdf" target="_blank">Click here to View</a></p>
+              </div>
+            </div>
+
+<div class="row schedule-item">
+    <div class="col-md-2"><time>17 Apr 2024</time></div>
+              <div class="col-md-10">
+                <h4>Registration ends on 9th May!</h4>
+                <p><a href="https://iitmparadox.org/events/19" target="_blank">Click here</a></p>
+              </div>
+            </div>
+            
+<div class="row schedule-item">
+    <div class="col-md-2"><time>15 Apr 2024</time></div>
+              <div class="col-md-10">
+                <h4>Our event guest speakers and mentor details have been released!</h4>
+                <p><a href="/speakers.html">Click here</a></p>
+              </div>
+            </div>
+<div class="row schedule-item">
+              <div class="col-md-2"><time>13 Mar 2024</time></div>
+              <div class="col-md-10">
+                <h4>Our event rulebook has been released!</h4>
+                <p><a href="/rules.html">Click here</a></p>
+              </div>
+            </div>
+<div class="row schedule-item">
+    <div class="col-md-2"><time>13 Mar 2024</time></div>
+              <div class="col-md-10">
+                <h4>Release of LogicLooM 1.0 Stats</h4>
+                <p><a href="https://logicloom.netlify.app/storage/logicloom-v1-release.pdf" target="_blank">Click here to View</a></p>
+              </div>
+            </div>
+            
+            
+          </div>
+          <!-- End Schedule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
+
+
+    
+
+    <!-- =======  F.A.Q Section ======= -->
+    <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What's the eligibility to participate? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                    This is a PAN BS event. <b>All students</b> (irrespective of the level) enrolled (i.e. having the student mail id) in the IITM UG Data Science or Electronic Systems programme are welcome to register for our event.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">I'm a foundational student. Should I take part in this contest? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                <b>Absolutely! We strongly encourage you to register.</b> We have a <b>separate category for the Foundational students</b> in the prelims - so you are competing with your fellow mates who're at the same level as you, providing a fair and challenging environment.<br>The beauty of LogicLoom 2.0 lies in its accessibility.
+
+You <b>don't need prior knowledge of AI and ML</b> to participate. The difficulty level will be tailored to the topics covered in FL courses, ensuring that every participant feels comfortable yet challenged. The key to success lies in your ability to think outside the box and approach problems with creativity and logic. So, don't hesitate - seize the opportunity and go for it!
+
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">I am unable to access the registration form. What to do? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                   Registration will only be possible online via <a href="https://iitmparadox.org/events/19" target="_blank">IITM Paradox portal</a>. Please try signing using the IITM student account only.
+                          <br>
+                          If you are facing issues in registering for our event on the Paradox website, please communicate with the Paradox team directly at webops@iitmparadox.org with a CC to us.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">I can't login to the LogicLooM Participant app portal. <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                   To access the participants portal and attempt the online rounds, a seamless login system is now enabled through Google OAuth integration. You don't need to remember any creds.<br>Simply <b>sign in using the student G-account</b> used while registering for our event on the Paradox portal. If you attempt to log in with a different account, you'll receive an error message and won't be eligible to access it.
+                    <br>Please write to <a href="mailto:logicloom@ds.study.iitm.ac.in">logicloom@ds.study.iitm.ac.in</a> for any queries.
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Due to some issues in my internet connectivity I couldn't submit the prelims. Will it be fine? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                <b>Absolutely, there's nothing to worry.</b> The responses marked and saved before the glitch occured, will be evaluated by the auto-grader once the due time
+                    passes for your profile. It will be considered as a proper submission, provided all the integrity checks pass once processed by the system (Once the
+                    exam ends, all activity logs from the portal will be processed via our system. The entire process is automated. Any cases of discrepancies, mismatch, UFM will be tracked by our tool and will result in the failed checks, followed by the cancellation of your attempt)<br>
+                    Also, for any loading issues on the question screen (due to server load etc.), don't logout. Just press the refresh icon on the question screen.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">I logged in to the LogicLooM portal at 7PM. Is that my start time? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+              No. Once you login, you will land on the waiting lounge where you can view the quiz related instructions. There should be a 'Launch' button which will get auto-activated once
+                    the contest gets live.<br>Clicking this button will only start the quiz and take you to the main questions page, which will be considered as your start time and you need to submit within 40 mins from then. Please <b>refer to the live timer</b> on the portal.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">I started the prelims at 23:45PM. Will I still get 40 minutes? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                    No. You will have to finish on or before 23:59 IST (after which the attempt window will close). To utilise the complete duration, you need to start the assessment latest by 23.20 IST. Otherwise, you’ll get less time to answer.
+                    <br>
+                    Please go through the rule book properly.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">Can I take prelims in both the slots? <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                    No. Once you start the exam, you have to complete it within the slot in the specified time limit. The <b>maximum number of attempts will be set to 1</b>.
+                          <br>
+                Moreover, we have provided a flexible window of <b>28 hours</b> and you can <b>attempt the round for any 40 minutes in this time-frame</b>. Decide your convenient slot wisely. Please check the 'Important Dates' section on the website.
+                  </p>
+                </div>
+              </li>
+               <li>
+                <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">I have some other questions that haven't been discussed here. <i class="bi bi-question-circle-fill icon-show"></i><i class="bi bi-x-circle-fill icon-close"></i></div>
+                <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+                  <p style="text-align:justify;">
+                    We suggest you to read the event <a href="/rules">Rule book (logicloom.iitmparadox.org/rules)</a> first, as everything has been explained there in detail.
+              <br>Still, if you have any general questions or face technical issues, feel free to contact the organizers via mail at <a href="mailto:logicloom@ds.study.iitm.ac.in" target="_blank">logicloom@ds.study.iitm.ac.in</a>. We will try to reply back within one working day.
+                    <br>You may also contact our Public relations member at <a href="tel:+919007429038">+91 9007429038</a>.
+                  </p>
+                </div>
+              </li>
+
+
+              
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End  F.A.Q Section -->
+    
+  <!-- ======= Supporters Section ======= -->
+    <section id="supporters" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <!--<div class="section-header"><h2></h2><p></p></div>-->
+
+        <div class="row g-0 supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="https://logicloom.netlify.app/storage/paradoxlogo.png" style="width:140px;" class="img-fluid" alt="paradoxlogo">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="https://logicloom.netlify.app/storage/whouse.PNG" style="width:140px;" class="img-fluid" alt="houselogo">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="supporter-logo">
+              <img src="https://cdn-icons-png.flaticon.com/128/14697/14697106.png" class="img-fluid" alt="ccllogo">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="https://cdn-icons-png.flaticon.com/128/14697/14697106.png" class="img-fluid" alt="sponsorlogo">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Section -->  
+    
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p style="color:black;">Feel free to connect incase you have any questions. We'll get back to you asap :)</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address>Paradox Technicals Dept., Student Affairs, IIT Madras, Chennai 600036</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-discord"></i>
+              <!--<i class="bi bi-whatsapp"></i>-->
+              <h3>Discussion Group</h3>
+              <p><a href="https://chat.whatsapp.com/JGrEcLoy8Dd9VynvemLpOk" target="_blank">WhatsApp Group</a><br><a href="https://discord.gg/z4KZdKT77z" target="_blank">Discord Channel</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Event Support</h3>
+              <p><a href="mailto:logicloom@ds.study.iitm.ac.in">logicloom@ds.study.iitm.ac.in</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">       
+    <div class="footer-top">            
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <a href="/v2"><img src="assets/footerlogo.png" style="max-width:100%;height:auto;"></a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Docs</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/rules.html">Guidelines & Rule Book</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://web.iitm.ac.in/ibse/symposium/images/How-to-reach-IIT-Madras.pdf" target="_blank">Reaching IITM <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://acr.iitm.ac.in/wp-content/uploads/2022/12/IIT-Map-FINAL-27-07-2021.pdf" target="_blank">Campus Map <i class="bi bi-box-arrow-up-right"></i></a></li>      
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Site Map</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+            </ul>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="?login=true">Participants App</a></li>
+            </ul>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/speakers.html">Meet Our Speakers</a></li>
+            </ul>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/team.html">Meet Our Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>General Queries</h4>
+            <p>
+              Event Organizers, <br>
+              LogicLooM 2.0, Technicals,<br>
+              Paradox 2024<br>
+              <strong>Email:</strong> logicloom@ds.study.iitm.ac.in<br>
+              <strong>Phone:</strong> +91 9007429038
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.instagram.com/paradox_iitmadras" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://in.linkedin.com/company/paradox-iitmadras" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/@paradox_iitmadras" class="linkedin" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://twitter.com/iitm_paradox" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        With <i style="color:#f8234a;" class="bi bi-heart-fill"></i>, LogicLooM 2.0 Organizing Team
+      </div>
+      <div class="credits">
+        &copy; 2024 LogicLooM UMS Workflow v2.1 Developed by Somsubhra
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-double-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var preloader = document.getElementById("preloader");
+  setTimeout(function() {
+    preloader.style.display = "none";
+  }, 500); 
+});    
+  </script>
+<script language=JavaScript>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+</script>
+<script>
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
+
+document.addEventListener('click', e => {
+    cursor.classList.add("expand");
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500);
+});        
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      showAndAutoCloseAlert();
+    });
+
+    function showAndAutoCloseAlert() {
+      var alertElement = document.getElementById('alert');
+      alertElement.style.display = 'block';
+      alertElement.style.animationName = 'fadeInOut';
+
+      // Auto-close after 10 seconds
+      setTimeout(function() {
+        closeAlert();
+      }, 10000);
+    }
+
+    // Function to close the alert
+    function closeAlert() {
+      var alertElement = document.getElementById('alert');
+      alertElement.style.animationName = '';
+      alertElement.style.animationName = 'fadeInOut-reverse';
+      setTimeout(function() {
+        alertElement.style.display = 'none';
+      }, 8000);
+    }
+  </script>	
+<script>
+ document.getElementById('showModal').addEventListener('click', function() {
+  document.getElementById('modal').style.display = 'block';
+});
+
+document.getElementsByClassName('close')[0].addEventListener('click', function() {
+  document.getElementById('modal').style.display = 'none';
+});
+
+document.getElementById('profileForm').addEventListener('submit', function(event) {
+    document.getElementById('modal').style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
