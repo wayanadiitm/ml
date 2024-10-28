@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+<!--{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}-->
+
+<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('/img/banner2.jpg')">
+  <div class="mw7 center ph3">
+    <div class="db mb3">
+      <div class="mw7 relative bg-fix-primary mb3">
+        <p class="b f4 di lh-title mb3 white mw6">LogicLooM Organizers present</p><br>
+        <h1 class="f2 f1-l b di lh-title mb3 white mw6" style="text-shadow: 2px 2px red;">
+           The PAN-BS ML Challenge 
+        </h1><br>
+        <p class="b f4 di lh-title mb3 white mw6"><i class="fa fa-calendar" aria-hidden="true"></i> Aug 5 - 11 <i class="fa fa-map-marker" aria-hidden="true"></i> Online</p>
+      </div>
+      <div class="mw7 relative bg-fix-primary">
+        <!--<p class="b f4 di lh-title mb3 white mw6 bg-primary">
+        </p>-->
+        <!--<a href="https://forms.gle/eD1WxU9sEWaEk2WL8" target="_blank" class="btn raise">Register Now <i class="fa fa-external-link" aria-hidden="true"></i></a>-->
+        <a href="#" class="btn raise">Registration closed!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<marquee style="animation: marquee 15s linear infinite;" onmouseover="this.stop();" onmouseout="this.start();"><font color="red"><i class="fa fa-bullhorn" aria-hidden="true"></i>
+<a href="https://mlchallenge.netlify.app/post/results/" style="text-decoration:none;">Level-1 Results are out!</a> | <a href="https://www.youtube.com/watch?v=O0vGP10IhUk" target="_blank" style="text-decoration:none;">Watch our mentor session on Comprehensive Approach to the Challenge Problem Statements</a> | <a href="https://youtube.com/live/rHPTai225V4" target="_blank" style="text-decoration:none;">Watch our 25<sup>th</sup> July Orientation (Open Session)</a></font></marquee>
+
+<!--{{ partial "short-text" .Params.blurb}}-->
+
+<div class="bg-grey-1 pv4">
+  <div class="flex-l mhn1-l ph3 center mw7">
+    <p class="w-100-l mb0">Join us in an exhilarating exploration at the frontier of artificial intelligence and machine learning! Here’s why you should be part of this groundbreaking contest: you'll gain the experience of tackling the problems in datasets, solving real-life problem statements, showcasing your ML, NLP skills, collaborating and exchanging ideas with your peers.</p>
+    <img src="/img/ml.png">
+  </div>
+</div>
+
+
+
+{{ partial "2-up" .Params }}
+
+<!--{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}-->
+<!--{{ partial "text-and-image" }}-->
+
+<div class="bg-highlight pv4">
+  <div class="flex-l mhn1-l ph3 center mw7">
+    <h2 class="f2 b lh-title mb2">Motivation Behind the Tasks</h2>
+    <p class="mb0">
+<i class="fa fa-info-circle" aria-hidden="true"></i> Track 1: In an age of information overload, accurately categorizing fake news is crucial for fostering reliable communication. The task underscores the need to explore the
+effectiveness of NLP in understanding Dravidian languages, which are less widely spoken.
+<br><br>
+<i class="fa fa-info-circle" aria-hidden="true"></i> Track 2: With the rapid advancement of AI, distinguishing between human-written and AI-generated content is increasingly challenging. This challenge aims to explore capabilities
+of ML models to accurately identify the origin of textual content, contributing to the development of robust techniques for detecting AI-generated text.
+    </p>
+  </div>
+</div>
+
+<div class="bg-grey-1 pv4">
+  <div class="flex-l mhn1-l ph3 center mw7">
+    <h2 class="f2 b lh-title mb2 w-40-l">Guests ✨</h2>
+    <p class="w-30-l mb0" style="color:#a3001f;"><b>Mr. Piyush Wairale</b><br>Course Instructor, IITM DS</p>
+    <p class="w-30-l mb0" style="color:#a3001f;"><b>Ms. Kothainayaki SK</b><br>Head, Student Affairs, IITM BS Programs</p>
+  </div>
+  <br>
+  <div class="flex-l mhn1-l ph3 center mw7">
+    <h2 class="f2 b lh-title mb2 w-40-l">Organizers</h2>
+    <p class="w-60-l mb0">Somsubhra De, Advait Vats<br>Volunteers: Anirban Mandal, Goutham Madineni, Shambhavi Shekhar<br>
+    (P.S. The same organizers have previously hosted LogicLooM 1.0 and Finale editions, the most successful & celebrated events at Paradox Technicals. Prof. Sudarshan Iyengar,
+    IIT-RPR and Prof. Jyothi K, IIT-GN were associated with LogicLooM!)</p>
+  </div>
+</div>
+
+<!--{{ partial "blog" . }}-->
+
+{{ end }}
