@@ -29,14 +29,17 @@
   border-right: 2px solid;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
   animation: blink 0.7s step-end infinite;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes blink {
   50% {
     border-color: transparent;
   }
-}    
+}   
 </style>
 </head>
   <body>
@@ -1165,13 +1168,12 @@
     "Join us as we explore the world of Machine Learning",
     "Let's make ML fun together for the freshers!"
   ];
-
+      
   let index = 0;
   let charIndex = 0;
   const typingSpeed = 100; // typing speed in ms
   const pauseDuration = 2000; // pause duration between phrases in ms
   const titleElement = document.getElementById('typing-title');
-
   function type() {
     if (charIndex < phrases[index].length) {
       titleElement.textContent += phrases[index].charAt(charIndex);
@@ -1181,7 +1183,6 @@
       setTimeout(deleteText, pauseDuration);
     }
   }
-
   function deleteText() {
     if (charIndex > 0) {
       titleElement.textContent = phrases[index].substring(0, charIndex - 1);
@@ -1189,11 +1190,11 @@
       setTimeout(deleteText, typingSpeed);
     } else {
       index = (index + 1) % phrases.length; // cycle through phrases
+      titleElement.textContent = ''; // Clear text for clean start
+      charIndex = 0; // Reset char index
       setTimeout(type, typingSpeed + 500); // wait a bit before typing next
     }
   }
-
-  // Start the typing effect
   type();
 </script>
   </body>
