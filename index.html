@@ -22,8 +22,22 @@
 <link rel="stylesheet" href="assets/css/animate.css" />
 <link rel="stylesheet" href="assets/css/lineicons.css" />
 <link rel="stylesheet" href="assets/css/ud-styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+.ud-hero-title {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}    
+</style>
 </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -99,9 +113,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title">
-                Dive into the awesome ML Journey with the Wayanad initiative
-              </h1>
+              <h1 class="ud-hero-title" id="typing-title"></h1>
               <p class="ud-hero-desc">
               Curious about Machine Learning but no idea where to start?
               </p>
@@ -1145,6 +1157,44 @@
       prevEl: '.swiper-button-prev',
     },
   });
+</script>
+    <script>
+  const phrases = [
+    "Dive into the awesome ML Journey with the Wayanad initiative",
+    "No more constrained to fests, the team is back with a broader aim",
+    "Join us as we explore the world of Machine Learning",
+    "Let's make ML fun together for the freshers!"
+  ];
+
+  let index = 0;
+  let charIndex = 0;
+  const typingSpeed = 100; // typing speed in ms
+  const pauseDuration = 2000; // pause duration between phrases in ms
+  const titleElement = document.getElementById('typing-title');
+
+  function type() {
+    if (charIndex < phrases[index].length) {
+      titleElement.textContent += phrases[index].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(deleteText, pauseDuration);
+    }
+  }
+
+  function deleteText() {
+    if (charIndex > 0) {
+      titleElement.textContent = phrases[index].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(deleteText, typingSpeed);
+    } else {
+      index = (index + 1) % phrases.length; // cycle through phrases
+      setTimeout(type, typingSpeed + 500); // wait a bit before typing next
+    }
+  }
+
+  // Start the typing effect
+  type();
 </script>
   </body>
 </html>
