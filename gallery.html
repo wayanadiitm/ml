@@ -127,6 +127,24 @@
     pointer-events: none;
 }
   </style>
+  <style>
+    .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loading-image {
+    width: 50px;
+}
+  </style>
 </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -233,6 +251,9 @@
     </div>      
     </section>
 
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+    <img src="/path/to/your/loading-image.gif" alt="Loading..." class="loading-image">
+</div>
     
 
     <!-- ====== Footer Start ====== -->
@@ -379,12 +400,32 @@ function renderGallery() {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = Math.min(startIndex + itemsPerPage, images.length);
 
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    loadingOverlay.style.display = 'flex';
+    let imagesLoaded = 0;
+
     for (let i = startIndex; i < endIndex; i++) {
         const img = document.createElement('img');
         img.src = images[i];
         img.alt = 'Photo';
         img.className = 'gallery-item';
-        img.addEventListener('click', () => openLightbox(images[i], i));
+
+        img.onload = () => {
+            imagesLoaded++;
+            if (imagesLoaded === endIndex - startIndex) {
+                // All images loaded
+                loadingOverlay.style.display = 'none'; // Hide loading overlay
+            }
+        };
+
+        img.onerror = () => {
+            imagesLoaded++;
+            if (imagesLoaded === endIndex - startIndex) {
+                // Handle case where an image fails to load
+                loadingOverlay.style.display = 'none'; // Hide loading overlay
+            }
+        };
+
         gallery.appendChild(img);
     }
 
