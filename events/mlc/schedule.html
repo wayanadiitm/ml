@@ -61,17 +61,21 @@
 }
   </style>
   <style>
-    .ud-about {
+.ud-about {
   margin: 40px 0;
 }
 
 .schedule-item {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
 }
 
 .schedule-item img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Cover to maintain aspect ratio */
   border-radius: 8px;
   margin-bottom: 15px; /* Space below the image */
 }
