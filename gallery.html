@@ -134,15 +134,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 999;
 }
 
-.loading-image {
-    max-width: 100%;
+.loading-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
   </style>
 </head>
@@ -245,7 +249,7 @@
     </section>
 
     <div id="loadingOverlay" class="loading-overlay" style="display: none;">
-    <img src="/ml/events/logicloom2/assets/preloader3.gif" alt="Loading..." class="loading-image">
+    <span class="loading-text">Loading...</span>
 </div>
 
     <div id="lightbox" class="lightbox" style="display:none;">
