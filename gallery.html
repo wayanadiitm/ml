@@ -239,6 +239,7 @@
         <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
           <div class="ud-about-content-wrapper">
             <div class="ud-about-content" style="max-width:100%;">
+              <p>Please click on the image to zoom.</p>
                <div class="gallery" id="gallery"></div>
               <div class="pagination" id="pagination" style="max-width:100%;"></div>
           </div>
@@ -255,8 +256,8 @@
     <div id="lightbox" class="lightbox" style="display:none;">
         <span class="close" onclick="closeLightbox()">&times;</span>
         <img class="lightbox-content" id="lightboxImage">
-  <a class="prev" onclick="changeImage(-1)"><i class="lni lni-arrow-left"></i></a>
-        <a class="next" onclick="changeImage(1)"><i class="lni lni-arrow-right"></i></a>
+  <a class="prev" id="lightboxPrev"><i class="lni lni-arrow-left"></i></a>
+        <a class="next" id="lightboxNext"><i class="lni lni-arrow-right"></i></a>
     </div>
     
 
@@ -681,15 +682,14 @@ renderGallery();
       window.document.addEventListener("scroll", onScroll);
     </script>
     <script>
-     let currentIndex = 0;
-const galleryItems = document.querySelectorAll('.gallery-item');
+    let currentIndex = 0;
 
 function openLightbox(imageSrc, index) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     lightboxImage.src = imageSrc;
     lightbox.style.display = 'flex';
-    currentIndex = index; // Save the current index
+    currentIndex = index;
 }
 
 function closeLightbox() {
@@ -701,21 +701,26 @@ function changeImage(direction) {
     currentIndex += direction;
 
     if (currentIndex < 0) {
-        currentIndex = galleryItems.length - 1; // Loop to the last image
-    } else if (currentIndex >= galleryItems.length) {
+        currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
         currentIndex = 0; // Loop to the first image
     }
 
-    const newImageSrc = galleryItems[currentIndex].src;
+    const newImageSrc = images[currentIndex];
     document.getElementById('lightboxImage').src = newImageSrc;
 }
 
-// Add click event listeners to gallery items
-galleryItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        openLightbox(item.src, index); // Pass the index
+function attachLightboxListeners() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            openLightbox(item.src, (currentPage - 1) * itemsPerPage + index); // Pass the correct index
+        });
     });
-});
+}
+
+document.getElementById('lightboxPrev').onclick = () => changeImage(-1);
+document.getElementById('lightboxNext').onclick = () => changeImage(1);
     </script>
   </body>
 </html>
