@@ -32,7 +32,7 @@
 }
 
 .gallery-item {
-    /*width: calc(33.333% - 10px);  3 images per row/*
+    /* width: calc(33.333% - 10px);  3 images per row */
   width: 300px;
     height: 300px;
     object-fit: cover;
@@ -594,6 +594,7 @@ function renderPagination() {
     if (currentPage > 1) {
         const prevBtn = document.createElement('button');
         prevBtn.innerText = 'Previous';
+        prevBtn.className = 'pagination-button';
         prevBtn.onclick = () => {
             currentPage--;
             renderGallery();
@@ -617,6 +618,7 @@ function renderPagination() {
     if (currentPage < totalPages) {
         const nextBtn = document.createElement('button');
         nextBtn.innerText = 'Next';
+        nextBtn.className = 'pagination-button';
         nextBtn.onclick = () => {
             currentPage++;
             renderGallery();
