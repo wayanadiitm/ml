@@ -60,6 +60,41 @@
     }
 }
   </style>
+  <style>
+    .ud-about {
+  margin: 40px 0;
+}
+
+.schedule-item {
+  margin-bottom: 30px;
+}
+
+.schedule-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.schedule-item h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.schedule-item p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6; /* Improve readability */
+}
+
+@media (max-width: 768px) {
+  .schedule-item h3 {
+    font-size: 1.3em; /* Slightly smaller font on smaller screens */
+  }
+}
+
+  </style>
 </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -84,44 +119,28 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="/ml/#about">About</a>
+                    <a href="faqs">FAQs</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/ml/#contact">Contact</a>
+                    <a href="rules">Rules</a>
                   </li>
-                  <li class="nav-item nav-item-has-children">
-                    <a href="javascript:void(0)"> Events </a>
-                    <ul class="ud-submenu">
-                     <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom1/" class="ud-submenu-link">
-                          LogicLooM (Margazhi edition)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom2/" class="ud-submenu-link">
-                          LogicLooM 2.0 (May - Jun 2024)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/mlc/" class="ud-submenu-link">
-                          ML Challenge 1.0, 2.0
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/pysprint" class="ud-submenu-link">
-                          Pythonic Sprint
-                        </a>
-                      </li>
-                    </ul>
+                  <li class="nav-item">
+                    <a href="schedule">Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="results">Results</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="img/aimlc_v2_guide.pdf">2.0 Guidebook</a>
                   </li>
                 </ul>
               </div>
 
-              <!--<div class="navbar-btn d-none d-sm-inline-block">
-                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                  Get Started
+<div class="navbar-btn">
+                <a class="ud-main-btn ud-white-btn" href="https://wayanadonline.unaux.com/mlc.php" target="_blank">
+                  Test Run Interface
                 </a>
-              </div>-->
+              </div>
             </nav>
           </div>
         </div>
@@ -130,14 +149,17 @@
     <!-- ====== Header End ====== -->
 
       <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home" "style="background-image: url('img/banner1.jpg')">
+    <section class="ud-hero" id="home" style="background-image: url('img/banner1.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title">
-                Schedule
+              <h1 class="ud-hero-title" style="text-shadow: 2px 2px red;">
+                The PAN-BS AI-ML Challenge
               </h1>
+               <p class="ud-hero-desc">
+              <i class="lni lni-calendar"></i> Aug 5 - 11 <i class="lni lni-map-marker"></i> Online
+              </p>
             </div>
           </div>
         </div>
@@ -145,21 +167,48 @@
     </section>
     <!-- ====== Hero End ====== -->
 
-     <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
-      <div class="container">
-        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
-          <div class="ud-about-content-wrapper">
-            <div class="ud-about-content" style="max-width:100%;">
-              <h2></h2>
-              <p>
-              </p>
-          </div>
-          </div>
-        </div>
+    <!-- ====== About Start ====== -->
+<section id="about" class="ud-about">
+  <div class="container">
+    <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
+      <div class="ud-about-content-wrapper">
+        <div class="ud-about-content" style="max-width:100%;">
+          <h2>Schedule</h2>      
+
+           <div class="row">
+      <div class="col-md-6 schedule-item">
+        <img src="img/dataset.png" alt="Train Data" class="img-fluid">
+        <h3>Aug 04: Release of Train data</h3>
+        <p>The training datasets for both the tasks will be released along with the detailed problem statements, milestones and information on evaluation metrics. Teams can start exploring the dataset, build & train suitable models. (Note: No validation set will be provided. Hint: Teams can split the train set to make their own validation data.)</p>
       </div>
-    </section>
-    <!-- ====== About End ====== -->
+
+      <div class="col-md-6 schedule-item">
+        <img src="img/modeltrain.PNG" alt="Unlabelled Test Set" class="img-fluid">
+        <h3>Aug 07: Release of Unlabelled test set</h3>
+        <p>The test set will be provided to the teams, who will then use their developed models to generate predictions. (Note: The ground truth labels won't be released)</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 schedule-item">
+        <img src="img/buildmodel.png" alt="Submission of Runs and Code" class="img-fluid">
+        <h3>Aug 08-09: Submission of runs and code</h3>
+        <p>Each team can submit a max. of 3 run files (i.e. submissions containing the model predicted outcomes... these can be results from different models or same model with different hyper-parameters etc.) Evaluation metrics such as F1 Score, Accuracy will be computed to assess the model performance on the test set.</p>
+      </div>
+
+      <div class="col-md-6 schedule-item">
+        <img src="img/winnerannouncement.jpg" alt="Declaration of Winners" class="img-fluid">
+        <h3>Aug 11: Declaration of winners & presentation session</h3>
+        <p>The scores will be displayed on the leaderboard on 10th. Further, the top teams need to deliver a brief system presentation and share their insights via a virtual meet on 11th, which will be judged by Piyush Sir.</p>
+      </div>
+    </div>
+ 
+
+</div>
+    </div>
+  </div></div>
+</section>
+<!-- ====== About End ====== -->
 
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
