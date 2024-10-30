@@ -32,10 +32,10 @@
 }
 
 .gallery-item {
-    width: calc(33.333% - 10px);  3 images per row
-  /*width: 300px;
+    /*width: calc(33.333% - 10px);  3 images per row/*
+  width: 300px;
     height: 300px;
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -102,7 +102,7 @@
 
 .pagination-button {
     margin: 0 5px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: none;
     background-color: #007bff;
     color: white;
@@ -582,18 +582,50 @@ function renderPagination() {
     pagination.innerHTML = '';
 
     const totalPages = Math.ceil(images.length / itemsPerPage);
-    
-    for (let i = 1; i <= totalPages; i++) {
+    const maxButtons = 5;
+
+    const startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+    const endPage = Math.min(totalPages, startPage + maxButtons - 1);
+
+    if (endPage - startPage < maxButtons - 1) {
+        startPage = Math.max(1, endPage - maxButtons + 1);
+    }
+
+    if (currentPage > 1) {
+        const prevBtn = document.createElement('button');
+        prevBtn.innerText = 'Previous';
+        prevBtn.onclick = () => {
+            currentPage--;
+            renderGallery();
+            renderPagination();
+        };
+        pagination.appendChild(prevBtn);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
         const pageBtn = document.createElement('button');
         pageBtn.innerText = i;
         pageBtn.className = 'pagination-button';
         pageBtn.onclick = () => {
             currentPage = i;
             renderGallery();
+            renderPagination();
         };
         pagination.appendChild(pageBtn);
     }
+
+    if (currentPage < totalPages) {
+        const nextBtn = document.createElement('button');
+        nextBtn.innerText = 'Next';
+        nextBtn.onclick = () => {
+            currentPage++;
+            renderGallery();
+            renderPagination();
+        };
+        pagination.appendChild(nextBtn);
+    }
 }
+
 
 // Call this function to initialize the gallery
 renderGallery();
