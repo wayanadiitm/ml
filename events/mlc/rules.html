@@ -84,44 +84,28 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="/ml/#about">About</a>
+                    <a href="faqs">FAQs</a>
                   </li>
                   <li class="nav-item">
-                    <a href="/ml/#contact">Contact</a>
+                    <a href="rules">Rules</a>
                   </li>
-                  <li class="nav-item nav-item-has-children">
-                    <a href="javascript:void(0)"> Events </a>
-                    <ul class="ud-submenu">
-                     <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom1/" class="ud-submenu-link">
-                          LogicLooM (Margazhi edition)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom2/" class="ud-submenu-link">
-                          LogicLooM 2.0 (May - Jun 2024)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/mlc/" class="ud-submenu-link">
-                          ML Challenge 1.0, 2.0
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/pysprint" class="ud-submenu-link">
-                          Pythonic Sprint
-                        </a>
-                      </li>
-                    </ul>
+                  <li class="nav-item">
+                    <a href="schedule">Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="results">Results</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="img/aimlc_v2_guide.pdf">2.0 Guidebook</a>
                   </li>
                 </ul>
               </div>
 
-              <!--<div class="navbar-btn d-none d-sm-inline-block">
-                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                  Get Started
+<div class="navbar-btn">
+                <a class="ud-main-btn ud-white-btn" href="https://wayanadonline.unaux.com/mlc.php" target="_blank">
+                  Test Run Interface
                 </a>
-              </div>-->
+              </div>
             </nav>
           </div>
         </div>
@@ -130,14 +114,17 @@
     <!-- ====== Header End ====== -->
 
       <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home" "style="background-image: url('img/banner1.jpg')">
+    <section class="ud-hero" id="home" style="background-image: url('img/banner1.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title">
-                Rules
+              <h1 class="ud-hero-title" style="text-shadow: 2px 2px red;">
+                The PAN-BS AI-ML Challenge
               </h1>
+               <p class="ud-hero-desc">
+              <i class="lni lni-calendar"></i> Aug 5 - 11 <i class="lni lni-map-marker"></i> Online
+              </p>
             </div>
           </div>
         </div>
@@ -145,21 +132,66 @@
     </section>
     <!-- ====== Hero End ====== -->
 
-     <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
-      <div class="container">
-        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
-          <div class="ud-about-content-wrapper">
-            <div class="ud-about-content" style="max-width:100%;">
-              <h2></h2>
-              <p>
-              </p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== About End ====== -->
+    <!-- ====== About Start ====== -->
+<section id="about" class="ud-about">
+  <div class="container">
+    <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
+      <div class="ud-about-content-wrapper">
+        <div class="ud-about-content" style="max-width:100%;">
+          <h2>Rules</h2>      
+
+     <p>Participants can join as individuals or in teams of up to 3 students. All IITM DS and ES students are welcome, regardless of their level. A student must be part of only one team.</p>
+          
+          <p><strong>To participate, you must register for the challenge <a href="https://forms.gle/eD1WxU9sEWaEk2WL8" target="_blank">here</a> before the deadline. A unique Team ID will be sent to the PoCs via email.</strong></p>
+          
+          <p>*Student mentors will be available during the contest (model training & validation phase) to assist you if needed.*</p>
+          
+          <p><strong>FL students with basic Python proficiency are encouraged to join us! The focus should be the learning experience. Resources and video content will be provided.</strong></p>
+          
+          <p>Participants should regularly check their email for updates about the contest and follow the <a href="/schedule">Schedule</a> for more information.</p>
+
+          <h3>Certificates</h3>
+          <ul>
+            <li><strong>Participation certificate:</strong> Provided to all team members who submit a solution & complete the challenge.</li>
+            <li><strong>Honourable Mention*</strong>: Given to teams ranked 4th-10th on the leaderboard after the contest ends.</li>
+            <li><strong>Certificate of Appreciation*</strong>: Awarded to the top 3 teams.</li>
+            <li><strong>Certificate of Achievement*</strong>: Awarded to teams that surpass the benchmark scores.</li>
+          </ul>
+          <p>(<em>*will be signed by the Head, Student Affairs.</em>)</p>
+
+          <h3>Evaluation Policy</h3>
+          <p><strong>Contest Leaderboard (General Team Rankings)</strong></p>
+          <p>For each team submission, scores are computed as a tuple (F1 score, Accuracy score) denoted as (F, A). Submissions are ranked based on these scores in the following order of priority: first by F1 score (F) and then by Accuracy score (A) if F1 scores are tied. The best score out of all submitted runs, per team will be considered.</p>
+          <p>The top score for each team determines their rank. Teams are sorted with the highest scores appearing first, and ranks are assigned accordingly. In cases where multiple teams have identical (F, A) scores, the team with fewer participants will be ranked higher. If participant numbers are also identical, teams will share the same rank.</p>
+
+          <p><strong>Top team rankings After System Presentation</strong></p>
+          <p>The top 10 (subject to change, depending upon the average team performance) teams will present their systems in a session where presentations will be evaluated based on the following rubrics:</p>
+          <ul>
+            <li><strong>Novelty:</strong> Assessment of originality and the implementation of groundbreaking concepts or methods.</li>
+            <li><strong>Technical Accuracy:</strong> Evaluation of the precision and correctness of technical details, ensuring no errors.</li>
+            <li><strong>Clarity and Organization:</strong> Examination of how clear, well-organized, and logical the presentation flow is.</li>
+            <li><strong>Model Performance:</strong> Review of the model's performance metrics, including robustness, stability, consistency across datasets, and effectiveness on new, unseen data without overfitting.</li>
+            <li><strong>Visual and Aesthetic Quality:</strong> Quality of visual design, including clear and visually appealing slides.</li>
+            <li><strong>Engagement and Delivery:</strong> Evaluation of the presenter’s confidence, energy, and ability to engage and captivate the audience.</li>
+          </ul>
+          <p>The team with the highest total points across these criteria will be declared the winner.</p>
+
+          <h3>Code of Conduct</h3>
+          <ul>
+            <li>Evaluations will be automated and processed via the participant app-portal itself. Any deviations from the submission template & formats will impact the grading.</li>
+            <li>Code submission via the GForm is mandatory; else, the portal scores will be discarded.</li>
+            <li>Teams engaging in unfair practices will be disqualified. The decision of the organizing team will be final in all matters.</li>
+            <li>By participating in the event, all participants automatically agree to the Terms and Conditions. We adhere strictly to our privacy policy, and participant email data collected during registration will be used solely by the organizers. The event may be postponed or cancelled due to unavoidable circumstances. Additionally, contest rules may be subject to change. The organizing team’s decisions are final, and no grievances will be entertained in such cases.</li>
+          </ul>
+
+          <h3>Contact Us</h3>
+          <p>In case of any questions, please write to the <strong>Organizers</strong> at <a href="mailto:wayanad-ml@ds.study.iitm.ac.in">wayanad-ml@ds.study.iitm.ac.in</a>.</p>     
+
+</div>
+    </div>
+  </div></div>
+</section>
+<!-- ====== About End ====== -->
 
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
