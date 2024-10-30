@@ -402,6 +402,7 @@ function renderGallery() {
 
     const loadingOverlay = document.getElementById('loadingOverlay');
     loadingOverlay.style.display = 'flex';
+
     let imagesLoaded = 0;
 
     for (let i = startIndex; i < endIndex; i++) {
@@ -413,7 +414,6 @@ function renderGallery() {
         img.onload = () => {
             imagesLoaded++;
             if (imagesLoaded === endIndex - startIndex) {
-                // All images loaded
                 loadingOverlay.style.display = 'none'; // Hide loading overlay
             }
         };
@@ -421,7 +421,6 @@ function renderGallery() {
         img.onerror = () => {
             imagesLoaded++;
             if (imagesLoaded === endIndex - startIndex) {
-                // Handle case where an image fails to load
                 loadingOverlay.style.display = 'none'; // Hide loading overlay
             }
         };
@@ -429,9 +428,18 @@ function renderGallery() {
         gallery.appendChild(img);
     }
 
+    attachLightboxListeners();
+
     renderPagination();
 }
-
+function attachLightboxListeners() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            openLightbox(item.src, (currentPage - 1) * itemsPerPage + index); // Pass the correct index
+        });
+    });
+}
 function renderPagination() {
     const pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
