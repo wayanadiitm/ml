@@ -48,14 +48,11 @@
 <style>
 /* Global styles for page content */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: auto;  /* Ensure scrolling works */
-    height: 100%;    /* Full height for the page */
+    overflow: auto;
+    height: 100%;
 }
-
-/* Modal styles */
 .modal {
     display: none;  /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -66,21 +63,19 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent background */
 }
-
-/* Modal Content */
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;  /* Center the modal vertically */
+    margin: 10% auto;  /* Center the modal vertically with some space on top and bottom */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 80%;        /* Responsive width */
     max-width: 600px;  /* Max width for larger screens */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    overflow-y: auto;  /* Ensure content does not overflow the modal */
+    max-height: 80vh;  /* Limit the height of the modal */
     animation: fadeIn 0.3s ease;
 }
-
-/* Close button */
 .close {
     color: #aaa;
     float: right;
@@ -88,14 +83,11 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
 }
-
-/* Modal fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -104,18 +96,16 @@ body {
         opacity: 1;
     }
 }
-
-/* Make the modal more responsive on smaller screens */
 @media (max-width: 768px) {
     .modal-content {
-        width: 90%;  /* Increase width on smaller screens */
+        width: 90%;
         margin: 20% auto;
     }
 
     .close {
-        font-size: 24px;  /* Smaller close button on mobile */
+        font-size: 24px;
     }
-}   
+}
 </style>
 </head>
 <body>
@@ -298,6 +288,10 @@ body {
                 We launched our initiative in Wayanad in October 2023, and it has been met with overwhelming love, success, and
                 positive feedback. We are excited to see how it continues to thrive! We've conducted 2 mega-events at Paradox Technicals that became one of the celebrated events
                 among students with more than 1000+ unique participants combined and Profs. from IITGN, IITR and IITM course instructors being a part of it.
+              </p>
+              <p>
+                We would like to express our heartfelt gratitude to Prof. Sudarshan, Prof. Jyothi, Mr. Piyush, the Paradox Team (with special thanks to Vivek, Aparna, and Mayank from the technical team), 
+                and Student Affairs for their unwavering support.
               </p>
               <center><img src="/ml/assets/images/logicloom/2.jpg" style="max-width:50%;height:auto;"/></center>
               <br><br>
