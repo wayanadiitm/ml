@@ -25,62 +25,48 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <style>
-    .button-56 {
-  align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
+<!-- HTML !-->
+<button class="button-44" role="button">Button 44</button>
+
+/* CSS */
+.button-44 {
+  background: #e62143;
+  border-radius: 11px;
   box-sizing: border-box;
-  color: #111;
+  color: #fff;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
   justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
+  line-height: 33.4929px;
+  padding: .8em 1em;
   text-align: center;
   text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
-
-.button-56:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
   width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
+  word-break: break-word;
+  border: 0;
 }
 
-.button-56:hover:after {
-  transform: translate(0, 0);
-}
-
-.button-56:active {
-  background-color: #ffdeda;
+.button-44:active,
+.button-44:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
   outline: 0;
 }
 
-.button-56:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .button-56 {
-    padding: 0 40px;
-  }
+.button-44:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
 }
   </style>
 </head>
@@ -188,16 +174,16 @@
 <li>Goes without saying, content must be original i.e. written by you and free from any copyright claims by third parties. No plagiarism pls, urgh!</li>
 <li>Articles should not have been posted elsewhere.</li>
 <li>Please ensure that the work is free from AI-generated content (like GPT etc).</li>
-<li>Unfortunately, we will accept blogs written in English this time.</li>
-<li>A student can make one submission only.</li>
-<li>It should be crisp, max. number of pages can be 3. Cite references wherever applicable.</li>
+<li>Regrettably, English will be the only language accepted this time.</li>
+<li>You can make one submission only. You can revise and submit it anytime before deadline.</li>
+<li>It should be crisp, try to align with this page limit - max. number of pages can be 3. Cite references wherever applicable.</li>
 <li>Acceptance to showcase a blog on our site depends on the initiative core team and whatever decided is final. No queries to be entertained about this.</li>
 <li>If the submitted article is accepted from our end, the same cannot be posted/shared in other platforms.</li>
 <br>
                 <b><font color="blue">Accepted articles will be featured in our newsletter, making it a special highlight! We look forward to the exceptional quality of your submissions.</font></b><br><br>
                 <font color="red">Deadline: <u>25th November</u> 2024 IST</font>
               </p>
-              <a href="https://wayanadonline.unaux.com/call-for-blogs.php" target="_blank"><button class="button-56" role="button">Submit Here</button></a>
+              <a href="https://wayanadonline.unaux.com/call-for-blogs.php" target="_blank"><button class="button-44" role="button">Make Submissions</button></a>
           </div>
           </div>
         </div>
