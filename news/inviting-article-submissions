@@ -6,7 +6,20 @@
         <script type="text/javascript">
             window.location.href = "https://wayanadiitm.github.io/ml/news/article-showcase-contest"
         </script>
-        <title>Page Redirection</title>
+        <title>ML Series - Wayanad House</title>
+<meta name="title" content="ML Series - Wayanad House">
+<meta name="description" content="Welcome to Wayanad House">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wayanadiitm.github.io/ml/">
+<meta property="og:title" content="ML Series - Wayanad House">
+<meta property="og:description" content="ML Series is an initiative by the Wayanad House">
+<meta property="og:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://wayanadiitm.github.io/ml/">
+<meta property="twitter:title" content="ML Series - Wayanad House">
+<meta property="twitter:description" content="ML Series is an initiative by the Wayanad House">
+<meta property="twitter:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
+<link rel="shortcut icon" href="/ml/assets/images/favicon.png" type="image/png"/>
     </head>
     <body>
     </body>
