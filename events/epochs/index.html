@@ -170,6 +170,22 @@ section.contact .social-media a {
   font-size: 1.3rem;
 }
 </style>
+<style>
+.timer {
+            font-size: 3em;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .flicker {
+            animation: flicker 1s infinite;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }    
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
@@ -206,6 +222,7 @@ section.contact .social-media a {
         <p>We invite students to contribute articles in the <b>AI-ML and programming domains (including interdisciplinary topics such as AI in Physics, Robotics and more) for our annual newsletter</b>. We are looking for fresh insights, any findings, and thoughtful analyses that engage our community.
         </p>
          <a href="https://wayanadonline.unaux.com/submit.php" target="_blank"><button class="btn btn-outline-dark btn-lg">Make Submission <i class="bi bi-rocket-takeoff-fill"></i></button></a>
+        <div class="timer" id="timer">Loading...</div>
       </div>
       <div class="col-sm-6 text-center">
         <img src="ml1.png" class="img-fluid">
@@ -309,6 +326,34 @@ section.contact .social-media a {
 
 <footer class="text-center p-3 bg-body-tertiary">
   <div>Any Questions? Write to <a href="mailto:wayanad-ml@ds.study.iitm.ac.in" target="_blank">wayanad-ml@ds.study.iitm.ac.in</a></div>
-</footer>  
+</footer>
+<script>
+        function updateCountdown() {
+            const deadline = new Date('2024-11-25T23:59:00+05:30');
+            const now = new Date();
+            const timeRemaining = deadline - now;
+
+            if (timeRemaining <= 0) {
+                document.getElementById('timer').innerHTML = 'Submission closed';
+                return;
+            }
+
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            const timerDisplay = `Submission closes in ${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+
+            document.getElementById('timer').innerHTML = timerDisplay;
+            document.getElementById('timer').classList.add('flicker');
+        }
+
+        function padZero(num) {
+            return num < 10 ? '0' + num : num;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>  
 </body>
 </html>
