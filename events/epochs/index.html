@@ -179,12 +179,11 @@ section.contact .social-media a {
             display: inline-block;
         }
         .timer {
-            font-size: 2em;
+            font-size: 15px;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             display: inline-block;
-            color: #ffcc00;
+            color: red;
         }
         .flicker {
             animation: flicker 1s infinite;
@@ -231,7 +230,7 @@ section.contact .social-media a {
         <p>We invite students to contribute articles in the <b>AI-ML and programming domains (including interdisciplinary topics such as AI in Physics, Robotics and more) for our annual newsletter</b>. We are looking for fresh insights, any findings, and thoughtful analyses that engage our community.
         </p>
          <a href="https://wayanadonline.unaux.com/submit.php" target="_blank"><button class="btn btn-outline-dark btn-lg">Make Submission <i class="bi bi-rocket-takeoff-fill"></i></button></a>
-        <div class="timer-container">
+        <br><div class="timer-container">
         <div id="countdown">Submission closes in <span id="timer">Loading...</span></div>
     </div>
       </div>
@@ -354,7 +353,7 @@ section.contact .social-media a {
             const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            const timerDisplay = `${days}d ${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+            const timerDisplay = `${days}d ${padZero(hours)}h:${padZero(minutes)}m:${padZero(seconds)}s`;
 
             const timerElement = document.getElementById('timer');
             timerElement.innerHTML = timerDisplay;
