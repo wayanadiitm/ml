@@ -171,11 +171,20 @@ section.contact .social-media a {
 }
 </style>
 <style>
-.timer {
-            font-size: 3em;
+.timer-container {
+            font-size: 2em;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(255,255,0,0.3);
             border-radius: 10px;
+            display: inline-block;
+        }
+        .timer {
+            font-size: 2em;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            display: inline-block;
+            color: #ffcc00;
         }
         .flicker {
             animation: flicker 1s infinite;
@@ -184,7 +193,7 @@ section.contact .social-media a {
             0% { opacity: 1; }
             50% { opacity: 0.5; }
             100% { opacity: 1; }
-        }    
+        }  
 </style>
 </head>
 <body>
@@ -222,7 +231,9 @@ section.contact .social-media a {
         <p>We invite students to contribute articles in the <b>AI-ML and programming domains (including interdisciplinary topics such as AI in Physics, Robotics and more) for our annual newsletter</b>. We are looking for fresh insights, any findings, and thoughtful analyses that engage our community.
         </p>
          <a href="https://wayanadonline.unaux.com/submit.php" target="_blank"><button class="btn btn-outline-dark btn-lg">Make Submission <i class="bi bi-rocket-takeoff-fill"></i></button></a>
-        <div class="timer" id="timer">Loading...</div>
+        <div class="timer-container">
+        <div id="countdown">Submission closes in <span id="timer">Loading...</span></div>
+    </div>
       </div>
       <div class="col-sm-6 text-center">
         <img src="ml1.png" class="img-fluid">
@@ -338,14 +349,16 @@ section.contact .social-media a {
                 return;
             }
 
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            const timerDisplay = `Submission closes in ${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+            const timerDisplay = `${days}d ${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
 
-            document.getElementById('timer').innerHTML = timerDisplay;
-            document.getElementById('timer').classList.add('flicker');
+            const timerElement = document.getElementById('timer');
+            timerElement.innerHTML = timerDisplay;
+            timerElement.classList.add('flicker');
         }
 
         function padZero(num) {
