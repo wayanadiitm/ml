@@ -172,27 +172,19 @@ section.contact .social-media a {
 </style>
 <style>
 .timer-container {
-            font-size: 2em;
-            padding: 20px;
+            font-size: 10px;
+            padding: 15px;
             background-color: rgba(255,255,0,0.3);
             border-radius: 10px;
             display: inline-block;
         }
         .timer {
-            font-size: 15px;
-            padding: 10px;
+            font-size: 10px;
+            padding: 5px;
             border-radius: 5px;
             display: inline-block;
             color: red;
         }
-        .flicker {
-            animation: flicker 1s infinite;
-        }
-        @keyframes flicker {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }  
 </style>
 </head>
 <body>
@@ -357,7 +349,6 @@ section.contact .social-media a {
 
             const timerElement = document.getElementById('timer');
             timerElement.innerHTML = timerDisplay;
-            timerElement.classList.add('flicker');
         }
 
         function padZero(num) {
