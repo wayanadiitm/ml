@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHALE Initiative 🐋</title>
+    <meta name="description" content="Welcome to Wayanad House AI-ML Enthusiasts Interest Group">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-3" x-data="{ open: false }">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-gray-800">WHALE Initiative 🐋</a>
+                <button @click="open = !open" class="md:hidden">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path x-show="!open" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        <path x-show="open" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex">
+                    <a href="#home" class="mx-3 text-gray-600 hover:text-gray-800">Home</a>
+                    <a href="#about" class="mx-3 text-gray-600 hover:text-gray-800">About</a>
+                    <a href="#events" class="mx-3 text-gray-600 hover:text-gray-800">Events</a>
+                    <a href="#team" class="mx-3 text-gray-600 hover:text-gray-800">Team</a>
+                    <a href="#contact" class="mx-3 text-gray-600 hover:text-gray-800">Contact</a>
+                </div>
+            </div>
+            <div x-show="open" class="md:hidden mt-3">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-gray-800">About</a>
+                <a href="#events" class="block py-2 text-gray-600 hover:text-gray-800">Events</a>
+                <a href="#team" class="block py-2 text-gray-600 hover:text-gray-800">Team</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400">
+        <div id="particles-js" class="absolute inset-0"></div>
+        <div class="text-center text-white relative z-10">
+            <h1 class="text-5xl font-bold mb-4" id="typing-title"></h1>
+            <p class="text-xl mb-8">Curious about Machine Learning but no idea where to start?</p>
+            <div class="space-x-4">
+                <a href="archives" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get Started</a>
+                <a href="/ml/events/epochs" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-500 transition duration-300">Article Contest</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-certificate text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Problem-solving excellence</h3>
+                    <p class="text-gray-600">Enhance your problem-solving skills through our challenges.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Hands-On Experience</h3>
+                    <p class="text-gray-600">Get practical experience with real-world ML projects.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-check-circle text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Knowledge enhancement</h3>
+                    <p class="text-gray-600">Expand your ML knowledge through our comprehensive resources.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <i class="fas fa-users text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Community Building</h3>
+                    <p class="text-gray-600">Connect with like-minded ML enthusiasts and grow together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="/ml/assets/images/logicloom/2.jpg" alt="About Us" class="rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+                    <p class="text-gray-600 mb-4">
+                        We launched our initiative in Wayanad in October 2023, and it has been met with overwhelming love, success, and
+                        positive feedback. We've conducted 2 mega-events at Paradox Technicals that became one of the celebrated events
+                        among students with more than 1000+ unique participants combined and Profs. from IITGN, IITR and IITM course instructors being a part of it.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        We would like to express our heartfelt gratitude to Prof. Sudarshan, Prof. Jyothi, Mr. Piyush, the Paradox Team and IITM Student Affairs for their unwavering support always.
+                    </p>
+                    <a href="archives" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Meet the Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Team member cards go here -->
+                <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/images/team/sd.PNG" alt="Somsubhra De" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Somsubhra De</h3>
+                        <p class="text-gray-600">Core</p>
+                    </div>
+                </div>
+                <!-- Add more team member cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-map-marker-alt text-2xl text-blue-500 mr-4"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Get in Touch</h3>
+                        <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank" class="text-blue-500 hover:underline">Join Discussion Group</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-2xl text-blue-500 mr-4"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">How Can We Help?</h3>
+                        <p class="text-gray-600">Our mailing list: wayanad-ml@ds.study.iitm.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">WHALE Initiative</h3>
+                    <p class="mb-4">ML made fun!</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/wayanad_iitm/" target="_blank" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/iitm-wayanad-house/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@wayanadhouseiitm" target="_blank" class="hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                        <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank" class="hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Useful Links</h3>
+                    <ul>
+                        <li><a href="/ml/" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="archives" class="hover:text-blue-400">Video Archives</a></li>
+                        <li><a href="gallery" class="hover:text-blue-400">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-4">Disclaimer</h3>
+                    <p class="text-sm">This portal is hosted solely for the convenience of the student community, and the institute or IITM BS program does not endorse or assume responsibility for the content, products, or services provided here.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+                &copy; 2025 WHALE Team. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+  const phrases = [
+    "W̲ayanad H̲ouse A̲I-ML̲ E̲nthusiasts Interest Group",
+    "Dive into the awesome ML Journey with the Wayanad initiative",
+    "No more constrained to fests, the team is back with a broader aim",
+    "Join us as we explore the world of Machine Learning 🚀",
+    "Let's make ML fun together for the freshers!",
+    "✨ Did you know? Some foundational students have outshone diploma holders at our events! 🎉",
+    "Strong claim: Many of the freshers are diving into hands-on ML skills for the first time here — and they’re loving it! 💡"
+  ];
+      
+  let index = 0;
+  let charIndex = 0;
+  const typingSpeed = 100; // typing speed in ms
+  const pauseDuration = 2000; // pause duration between phrases in ms
+  const titleElement = document.getElementById('typing-title');
+  function type() {
+    if (charIndex < phrases[index].length) {
+      titleElement.textContent += phrases[index].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(deleteText, pauseDuration);
+    }
+  }
+  function deleteText() {
+    if (charIndex > 0) {
+      titleElement.textContent = phrases[index].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(deleteText, typingSpeed);
+    } else {
+      index = (index + 1) % phrases.length; // cycle through phrases
+      titleElement.textContent = ''; // Clear text for clean start
+      charIndex = 0; // Reset char index
+      setTimeout(type, typingSpeed + 500); // wait a bit before typing next
+    }
+  }
+  type();
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Display the modal when the window loads
+window.onload = function() {
+    modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};    
+</script>
+  <script language=JavaScript>
+var message="Function Disabled!";
+
+function clickIE4(){
+if (event.button==2){
+return false;
+ }
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+</script>
+</body>
+</html>
