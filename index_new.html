@@ -13,45 +13,57 @@
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-10">
-        <nav class="container mx-auto px-6 py-3" x-data="{ open: false }">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-xl font-bold text-gray-800">WHALE Initiative 🐋</a>
-                <button @click="open = !open" class="md:hidden">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path x-show="!open" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                        <path x-show="open" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-                <div class="hidden md:flex">
-                    <a href="#home" class="mx-3 text-gray-600 hover:text-gray-800">Home</a>
-                    <a href="#about" class="mx-3 text-gray-600 hover:text-gray-800">About</a>
-                    <a href="#events" class="mx-3 text-gray-600 hover:text-gray-800">Events</a>
-                    <a href="#team" class="mx-3 text-gray-600 hover:text-gray-800">Team</a>
-                    <a href="#contact" class="mx-3 text-gray-600 hover:text-gray-800">Contact</a>
-                </div>
-            </div>
-            <div x-show="open" class="md:hidden mt-3">
-                <a href="#home" class="block py-2 text-gray-600 hover:text-gray-800">Home</a>
-                <a href="#about" class="block py-2 text-gray-600 hover:text-gray-800">About</a>
-                <a href="#events" class="block py-2 text-gray-600 hover:text-gray-800">Events</a>
-                <a href="#team" class="block py-2 text-gray-600 hover:text-gray-800">Team</a>
-                <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-800">Contact</a>
-            </div>
-        </nav>
+        <nav class="bg-white shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <a href="#" class="text-xl font-bold">WHALE Initiative 🐋</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+        <div class="relative group">
+          <a href="#" class="text-gray-600 hover:text-gray-900">Events</a>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden group-hover:block">
+            <a href="/ml/events/logicloom1/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">LogicLooM (Margazhi edition)</a>
+            <a href="/ml/events/logicloom2/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">LogicLooM 2.0 (May - Jun 2024)</a>
+            <a href="/logicloom3/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">LogicLooM 3.0 (JAN 2025)</a>
+            <a href="/ml/events/mlc/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ML Challenge 1.0, 2.0</a>
+            <a href="/ml/events/workshop2023" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Workshops-2023</a>
+            <a href="/ml/events/pysprint" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pythonic Sprint</a>
+          </div>
+        </div>
+        <a href="#team" class="text-gray-600 hover:text-gray-900">Team</a>
+        <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+      </div>
+      <button class="md:hidden" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+      <a href="#home" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+      <a href="#about" class="block py-2 text-gray-600 hover:text-gray-900">About</a>
+      <a href="#events" class="block py-2 text-gray-600 hover:text-gray-900">Events</a>
+      <a href="#team" class="block py-2 text-gray-600 hover:text-gray-900">Team</a>
+      <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
+    </div>
+  </div>
+</nav>
+
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400">
-        <div id="particles-js" class="absolute inset-0"></div>
-        <div class="text-center text-white relative z-10">
-            <h1 class="text-5xl font-bold mb-4" id="typing-title"></h1>
-            <p class="text-xl mb-8">Curious about Machine Learning but no idea where to start?</p>
-            <div class="space-x-4">
-                <a href="archives" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get Started</a>
-                <a href="/ml/events/epochs" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-500 transition duration-300">Article Contest</a>
-            </div>
-        </div>
-    </section>
+<section id="home" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4" id="typing-title"></h1>
+      <p class="text-xl mb-8">Curious about Machine Learning but no idea where to start?</p>
+      <div class="space-x-4">
+        <a href="archives" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get Started</a>
+        <a href="/ml/events/epochs" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-500 transition duration-300">Article Contest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Features Section -->
     <section id="features" class="py-20 bg-white">
@@ -105,6 +117,26 @@
         </div>
     </section>
 
+    <section id="feedbacks" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">What Our Participants Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <p class="mb-4">"Attempted many technical events in various editions of Paradox. LogicLooM tops them all. Good support, amazing coordination and overall an excellent event. Kudos to the organizers."</p>
+        <p class="font-semibold">- Gobalakrishnan V, Achiever @ LogicLooM</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <p class="mb-4">"Warmup questions were like jalebi:) They wrapped around twisting it multiple times. Round2 was hard! We scratched our head for 2.5 hours and did what we could. In this process, we definitely learnt a lot."</p>
+        <p class="font-semibold">- Siddharth, Achiever @ LogicLooM</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <p class="mb-4">"I realized that my problem solving skills are below par and I should work on them. The contest motivated and showed a mirror to me. I hope to participate in LogicLooM again with an improved version of myself."</p>
+        <p class="font-semibold">- Niraj, Participant @ LogicLooM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Team Section -->
     <section id="team" class="py-20 bg-white">
         <div class="container mx-auto px-6">
@@ -141,28 +173,27 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
-            <div class="max-w-lg mx-auto">
-                <div class="flex items-center mb-8">
-                    <i class="fas fa-map-marker-alt text-2xl text-blue-500 mr-4"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2">Get in Touch</h3>
-                        <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank" class="text-blue-500 hover:underline">Join Discussion Group</a>
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-envelope text-2xl text-blue-500 mr-4"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-2">How Can We Help?</h3>
-                        <p class="text-gray-600">Our mailing list: wayanad-ml@ds.study.iitm.ac.in</p>
-                    </div>
-                </div>
-            </div>
+<section id="contact" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+          <p class="mb-4">Join our discussion group to connect with fellow ML enthusiasts:</p>
+          <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300">Join WhatsApp Group</a>
         </div>
-    </section>
+      </div>
+      <div class="w-full md:w-1/2 px-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-4">How Can We Help?</h3>
+          <p class="mb-4">Reach out to us via email:</p>
+          <a href="mailto:wayanad-ml@ds.study.iitm.ac.in" class="text-blue-500 hover:underline">wayanad-ml@ds.study.iitm.ac.in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
@@ -188,7 +219,8 @@
                 </div>
                 <div class="w-full md:w-1/3">
                     <h3 class="text-xl font-semibold mb-4">Disclaimer</h3>
-                    <p class="text-sm">This portal is hosted solely for the convenience of the student community, and the institute or IITM BS program does not endorse or assume responsibility for the content, products, or services provided here.</p>
+                    <p class="text-sm">This portal is hosted solely for the convenience of the student community, and the institute or IITM BS program does not endorse or assume responsibility for the content, products, or services provided here. 
+                    Neither the institute nor the initiative team, house council will be responsible for any issues arising if any from using this site.</p>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
