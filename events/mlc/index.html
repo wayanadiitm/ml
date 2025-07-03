@@ -1,357 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ML Series - Wayanad House</title>
-<meta name="title" content="ML Series - Wayanad House">
-<meta name="description" content="Welcome to Wayanad House">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://wayanadiitm.github.io/ml/">
-<meta property="og:title" content="ML Series - Wayanad House">
-<meta property="og:description" content="ML Series is an initiative by the Wayanad House">
-<meta property="og:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://wayanadiitm.github.io/ml/">
-<meta property="twitter:title" content="ML Series - Wayanad House">
-<meta property="twitter:description" content="ML Series is an initiative by the Wayanad House">
-<meta property="twitter:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
-<link rel="shortcut icon" href="/ml/assets/images/favicon.png" type="image/png"/>
-<link rel="stylesheet" href="/ml/assets/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/ml/assets/css/animate.css" />
-<link rel="stylesheet" href="/ml/assets/css/lineicons.css" />
-<link rel="stylesheet" href="/ml/assets/css/ud-styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <style>
-    .ud-about-content {
-    max-width: 100%;
-}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pythonic Sprint - ML Series</title>
+  <meta name="description" content="Welcome to Wayanad House AI-ML Interest Group">
+  <meta name="keywords" content="python,council24,wayanad house,iitmbs,online">
+  <link href="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" rel="icon">
+  <link href="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" rel="apple-touch-icon">
 
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between videos */
-}
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-.video-item {
-    background: #f9f9f9; /* Light background for video item */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.video-item h3 {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.video-item iframe {
-    width: 100%;
-    height: 200px; /* Set a fixed height for consistency */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .video-grid {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-}
-  </style>
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet">
 </head>
-  <body>
-    <!-- ====== Header Start ====== -->
-    <header class="ud-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="/ml">
-                <img src="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" height="50" width="50"/>
-              </a>
-              <button class="navbar-toggler">
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-              </button>
 
-              <div class="navbar-collapse">
-                <ul id="nav" class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a href="/ml/#home">Home</a>
-                  </li>
+<body class="index-page">
 
-                  <li class="nav-item">
-                    <a href="faqs">FAQs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="rules">Rules</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="schedule">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="results">Results</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="img/aimlc_v2_guide.pdf">2.0 Guidebook</a>
-                  </li>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="/ml/assets/images/favicon.png" alt="">
+        <h1 class="sitename"> PAN-BS <b>ML</b> Challenge</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#videos">Video Resources</a></li>
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Paradox</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/ml/events/logicloom1/">LogicLooM 1.0</a></li>
+                  <li><a href="/ml/events/logicloom2/">LogicLooM 2.0</a></li>
+                  <li><a href="/logicloom3/">LogicLooM 3.0</a></li>
+                  <li><a href="/logicloom4/">LogicLooM 4.0 (Finale)</a></li>
                 </ul>
-              </div>
+              </li>
+              <li><a href="/ml/events/mlc/">ML Challenge - 1.0 and 2.0</a></li>
+              <li><a href="/ml/events/pysprint">Pythonic Sprint</a></li>
+              <li><a href="/ml/events/epochs/">Article Showcase</a></li>
+            </ul>
+          </li>
+          <li><a href="/gallery">Archives</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-<div class="navbar-btn">
-                <a class="ud-main-btn ud-white-btn" href="https://wayanadonline.unaux.com/mlc.php" target="_blank">
-                  Eval Interface
+      <a class="btn-getstarted" href="https://mlseries.42web.io" target="_blank">Eval Interface</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background-image: url('img/banner1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-12 mb-4 mb-lg-0">
+            <h1 class="hero-title mb-4">The PAN-BS AI-ML Challenge</h1>
+
+            <p class="hero-description mb-4">
+Join us in an exhilarating exploration at the frontier of artificial intelligence and machine learning!</p>
+            <div class="cta-wrapper">
+              <a href="#about" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Why this?</h3>
+            <p class="fst-italic">
+             Here’s why you should be part of this groundbreaking contest: you'll gain experience tackling the nuances in datasets, solving real-life problem statements, showcasing your ML and NLP skills, and collaborating with peers. 
+            </p>
+                       </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+  <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Challenging Tracks</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+                <h3>Fake News Detection in Dravidian Languages</h3>
+                <p>In an age of information overload, accurately categorizing fake news is crucial for fostering reliable communication. This task explores the effectiveness of NLP in understanding Dravidian languages, which are less widely spoken.
+                </p>
+                <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- ====== Header End ====== -->
-
-      <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home" style="background-image: url('img/banner1.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title" style="text-shadow: 2px 2px red;">
-                The PAN-BS AI-ML Challenge
-              </h1>
-               <p class="ud-hero-desc">
-              <i class="lni lni-calendar"></i> Aug 5 - 11 <i class="lni lni-map-marker"></i> Online
-              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Hero End ====== -->
+          </div><!-- End Service Item -->
 
-    <!-- ====== About Start ====== -->
-<section id="about" class="ud-about">
-  <div class="container">
-    <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
-      <div class="ud-about-content-wrapper">
-        <div class="ud-about-content" style="max-width:100%;">
-          <h2>About</h2>
-          <p>
-            Join us in an exhilarating exploration at the frontier of artificial intelligence and machine learning! Here’s why you should be part of this groundbreaking contest: you'll gain experience tackling the nuances in datasets, solving real-life problem statements, showcasing your ML and NLP skills, and collaborating with peers.
-          </p>
-        
-      <h2>Challenging Tracks 🌟</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/track1.jpg" style="width: 100%; height: auto; max-width: 300px;" alt="Track 1">
-          <p>Fake News Detection in Dravidian Languages</p>
-        </div>
-        <div class="col-md-6">
-          <img src="img/track2.PNG" style="width: 100%; height: auto; max-width: 300px;" alt="Track 2">
-          <p>AI-Generated Text Detection in Articles</p>
-        </div>
-      </div>
-    </div>
-
-        <h2>Motivation Behind the Tasks</h2><br>
-      <p>
-        <i class="lni lni-checkmark-circle"></i> <strong>Track 1:</strong> In an age of information overload, accurately categorizing fake news is crucial for fostering reliable communication. This task explores the effectiveness of NLP in understanding Dravidian languages, which are less widely spoken.
-        <br><br>
-        <i class="lni lni-checkmark-circle"></i> <strong>Track 2:</strong> With the rapid advancement of AI, distinguishing between human-written and AI-generated content is increasingly challenging. This challenge aims to explore the capabilities of ML models to accurately identify the origin of textual content, contributing to the development of robust techniques for detecting AI-generated text.
-      </p>
-<br>
-      <h2>Guests ✨</h2><br>
-      <p style="color:#a3001f;"><b>Mr. Piyush Wairale</b><br>Course Instructor, IITM BS Program (DS)</p><br>
-      <p style="color:#a3001f;"><b>Ms. Kothainayaki SK</b><br>Head, Student Affairs, IITM BS Programs</p>
-
-</div>
-    </div>
-  </div>
-</section>
-<!-- ====== About End ====== -->
-
-    <!-- ====== Footer Start ====== -->
-    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
-      <div class="shape shape-1">
-        <img src="/ml/assets/images/footer/shape-1.svg" alt="shape" />
-      </div>
-      <div class="shape shape-2">
-        <img src="/ml/assets/images/footer/shape-2.svg" alt="shape" />
-      </div>
-      <div class="shape shape-3">
-        <img src="/ml/assets/images/footer/shape-3.svg" alt="shape" />
-      </div>
-      <div class="ud-footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="ud-widget">
-                <span class="ud-footer-logo">
-                  ML Series, Wayanad House
-                </span>
-                <p class="ud-widget-desc">
-                 ML made fun!
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="service-content">
+               <h3>AI-Generated Text Detection in Articles</h3>
+                <p>With the rapid advancement of AI, distinguishing between human-written and AI-generated content is increasingly challenging. This challenge aims to explore the capabilities of ML models to accurately identify the origin of textual content, contributing to the development of robust techniques for detecting AI-generated text.
                 </p>
-                <ul class="ud-widget-socials">
-                  <li>
-                    <a href="https://wayanad.iitmbs.org" target="_blank">
-                      <i class="lni lni-google"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/wayanad_iitm/" target="_blank">
-                      <i class="lni lni-instagram-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/iitm-wayanad-house/" target="_blank">
-                      <i class="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/@wayanadhouseiitm" target="_blank">
-                      <i class="lni lni-youtube"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank">
-                      <i class="lni lni-whatsapp"></i>
-                    </a>
-                  </li>
-                  <!--<li>
-                    <a href="https://twitter.com/wayanad_iitm" target="_blank">
-                      <i class="lni lni-twitter-filled"></i>
-                    </a>
-                  </li>-->
-                </ul>
+                <a href="#" class="service-link">
+                  <span>Learn More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
+          </div><!-- End Service Item -->
 
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Useful Links</h5>
-                <ul class="ud-widget-links">
-                 <li>
-                    <a href="/ml/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/ml/archives">Video Archives</a>
-                  </li>
-                  <li>
-                    <a href="/ml/gallery">Gallery</a>
-                  </li>
-                </ul>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- guests Section -->
+    <section id="guests" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Guests</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="" class="img-fluid" alt="">
+                <div class="team-overlay">
+                  <p>Piyush sir is a course instructor in the IITM BS Program.</p>
+                  <div class="team-social">
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h4>Mr. Piyush Wairale</h4>
+                <span class="position">Judge</span>
               </div>
             </div>
-            <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">TnCs</h5>
-                <p><small>Disclaimer - This portal is hosted solely for the convenience of the student community, and the institute or IITM BS program does not endorse or assume responsibility for the content, products, or services provided here. Neither the institute nor the initiative members or house council or developer will be responsible for any issues arising if any from using this site. Accessing this site, you by-default agree to all TnCs.</small></p>
-                <ul class="ud-widget-links">
-                 
-                </ul>
+          </div><!-- End Team Member -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="" class="img-fluid" alt="">
+                <div class="team-overlay">
+                  <p>Ms. Kothai heads the Student Affairs of the IITM BS Programs.</p>
+                  <div class="team-social">
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content">
+                <h4>Ms. Kothainayaki SK</h4>
+                <span class="position">Guest</span>
               </div>
             </div>
-           
+          </div><!-- End Team Member -->
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    
+     <!-- Portfolio Section -->
+<section id="videos" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Video Resources</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+        <ul class="portfolio-filters isotope-filters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-video">Edition 1</li>
+          <li data-filter=".filter-video2">Edition 2</li>
+        </ul>
+      </div>
+
+      <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+         <!-- Video Portfolio Item 9 -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <span class="badge bg-warning text-dark"><i class="bi bi-tags-fill"></i> ML Challenge 1.0</span>
+              <h3>PAN-BS AI-ML Challenge Finale (Winner announcement & System Showcase)</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MCmgfA7kQkg?si=6lmiJFiD5CL6ZsTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!-- End Video Item -->
+
+         <!-- Video Portfolio Item 10 -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <span class="badge bg-warning text-dark"><i class="bi bi-tags-fill"></i> ML Challenge 1.0</span>
+              <h3>Comprehensive Approach to the Challenge Problem Statements</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5WcNNrh-3F4?si=yGDHFVdnFuX-6u3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!-- End Video Item -->
+
+         <!-- Video Portfolio Item 11 -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video2">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <span class="badge bg-warning text-dark"><i class="bi bi-tags-fill"></i> ML Challenge 2.0</span>
+              <h3>Orientation Session - ML Challenge 2.0 (Saavan edition)</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_4UxKPnBqLA?si=rCa1OJAyAu07JJrG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!-- End Video Item -->
+
+         <!-- Video Portfolio Item 12 -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <span class="badge bg-warning text-dark"><i class="bi bi-tags-fill"></i> ML Challenge 1.0</span>
+              <h3>PAN-BS AI-ML Challenge Orientation (Open Session)</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/rHPTai225V4?si=g7KTUZqyPDrMwNhj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!-- End Video Item -->
+
+         <!-- Video Portfolio Item 13 -->
+        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video2">
+          <div class="portfolio-card">
+            <div class="portfolio-content">
+              <span class="badge bg-warning text-dark"><i class="bi bi-tags-fill"></i> ML Challenge 2.0</span>
+              <h3>ML Challenge 2.0 Model Discussion & presentation</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WV48xwXkjKQ?si=0EQxrVqKFPiyYJz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!-- End Video Item -->
+
+       
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Feedback</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   The event was so great and well structured that a newbie in ML like me was also able to make a ML model and even get a decent score, building my confidence in the first try. Also, the organizers have also managed the event very well.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Team - Krish Gupta, Md. Shah</h3>
+                      <h4>ML Challenge Participants</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   The event was very nice. We're beginners and were able to learn lot of things which will help us in the ML journey.
+                We also thank all the mentors for guiding our team and providing us with the resources. I hope more such competitions will be conducted in future for ML.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Team - Atharva, Sneha</h3>
+                      <h4>ML Challenge Participants</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->          
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   This was a great Machine Learning Challenge for students across all levels with proper management of the task.
+                Freshers in ML got to know the flow and experience in the project and the experienced ones got the chance to show the expertise in their field.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Team - Shrushti, Jaswith</h3>
+                      <h4>ML Challenge Participants</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   I am absolutely a beginner and I know I have given my best. It felt great to be able to participate as I learnt so much from this challenge. This will definitely help me in future. I will request the team to continue to organize such challenges always.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Shreyasee Routray</h3>
+                      <h4>ML Challenge Participant</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                  Very well conducted. Hats off to the organisers - each and every one of them for their dedication and effort in making this a wonderful event.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Mohit Kumar</h3>
+                      <h4>ML Challenge Participant</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   The mentoring sessions were quite useful. We did not even know basics, but sessions being covered from basics helped. It helped fill our curiosity.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Team - Pushkar, Devam</h3>
+                      <h4>ML Challenge Participants</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->     
+
+
             
           </div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
-      <div class="ud-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                &copy; Wayanad House ML-Series Team
-                <!--<li>
-                  <a href="javascript:void(0)"></a>
-                </li>-->
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p class="ud-footer-bottom-right">
-                Template from
-                <a href="https://uideck.com" rel="nofollow" target="_blank">UIdeck</a>, Icon credits: Flaticon
-              </p>
-            </div>
-          </div>
-        </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2023-25 ML series team, All Rights Reserved</p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Logo credit: flaticon.com<br><br>
+        Note: This portal is hosted solely for the benefit of the student community, and the institute does not endorse or assume responsibility for the content, products, or services provided here. The ML Series team will NOT be responsible for any issues, if any, after using this site. By accessing this site, you by-default agree to all TnCs.
       </div>
-    </footer>
-    <!-- ====== Footer End ====== -->
+    </div>
 
-    <!-- ====== Back To Top Start ====== -->
-    <a href="javascript:void(0)" class="back-to-top">
-      <i class="lni lni-chevron-up"> </i>
-    </a>
-    <!-- ====== Back To Top End ====== -->
+  </footer>
 
-    <!-- ====== All Javascript Files ====== -->
-    <script src="/ml/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/ml/assets/js/wow.min.js"></script>
-    <script src="/ml/assets/js/main.js"></script>
-    <script>
-      // ==== for menu scroll
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
-      });
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-    </script>
-    <script>
-  const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-</script>
-  </body>
+</body>
 </html>
