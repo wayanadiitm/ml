@@ -1,355 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ML Series - Wayanad House</title>
-<meta name="title" content="ML Series - Wayanad House">
-<meta name="description" content="Welcome to Wayanad House">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://wayanadiitm.github.io/ml/">
-<meta property="og:title" content="ML Series - Wayanad House">
-<meta property="og:description" content="ML Series is an initiative by the Wayanad House">
-<meta property="og:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://wayanadiitm.github.io/ml/">
-<meta property="twitter:title" content="ML Series - Wayanad House">
-<meta property="twitter:description" content="ML Series is an initiative by the Wayanad House">
-<meta property="twitter:image" content="https://wayanadiitm.github.io/ml/assets/images/favicon.png">
-<link rel="shortcut icon" href="/ml/assets/images/favicon.png" type="image/png"/>
-<link rel="stylesheet" href="/ml/assets/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/ml/assets/css/animate.css" />
-<link rel="stylesheet" href="/ml/assets/css/lineicons.css" />
-<link rel="stylesheet" href="/ml/assets/css/ud-styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pythonic Sprint - ML Series</title>
+  <meta name="description" content="Welcome to Wayanad House AI-ML Interest Group">
+  <meta name="keywords" content="python,council24,wayanad house,iitmbs,online">
+  <link href="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" rel="icon">
+  <link href="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet">
 </head>
-  <body>
-    <!-- ====== Header Start ====== -->
-    <header class="ud-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="/ml">
-                <img src="https://cdn-icons-png.flaticon.com/128/10817/10817404.png" height="50" width="50"/>
-              </a>
-              <button class="navbar-toggler">
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-              </button>
 
-              <div class="navbar-collapse">
-                <ul id="nav" class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a href="/ml/#home">Home</a>
-                  </li>
+<body class="index-page">
 
-                  <li class="nav-item">
-                    <a href="/ml/#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/ml/#contact">Contact</a>
-                  </li>
-                  <li class="nav-item nav-item-has-children">
-                    <a href="javascript:void(0)"> Events </a>
-                    <ul class="ud-submenu">
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom1/" class="ud-submenu-link">
-                          LogicLooM (Margazhi edition)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/logicloom2/" class="ud-submenu-link">
-                          LogicLooM 2.0 (May - Jun 2024)
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/mlc/" class="ud-submenu-link">
-                          ML Challenge 1.0, 2.0
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="/ml/events/pysprint" class="ud-submenu-link">
-                          Pythonic Sprint
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="https://cdn-icons-png.flaticon.com/128/3098/3098090.png" alt="">
+        <h1 class="sitename"> <b>Python</b>ic Sprint</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Paradox</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/ml/events/logicloom1/">LogicLooM 1.0</a></li>
+                  <li><a href="/ml/events/logicloom2/">LogicLooM 2.0</a></li>
+                  <li><a href="/logicloom3/">LogicLooM 3.0</a></li>
+                  <li><a href="/logicloom4/">LogicLooM 4.0 (Finale)</a></li>
                 </ul>
-              </div>
+              </li>
+              <li><a href="/ml/events/mlc/">ML Challenge - 1.0 and 2.0</a></li>
+              <li><a href="/ml/events/pysprint">Pythonic Sprint</a></li>
+              <li><a href="/ml/events/epochs/">Article Showcase</a></li>
+            </ul>
+          </li>
+          <li><a href="/gallery">Archives</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-              <!--<div class="navbar-btn d-none d-sm-inline-block">
-                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                  Get Started
-                </a>
-              </div>-->
-            </nav>
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background-image: url('https://www.9series.com/img/services/machine-learning/Machine%20Learning%20services%20in%20india.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-12 mb-4 mb-lg-0">
+            <h1 class="hero-title mb-4">AI-ML, Reimagined.</h1>
+
+            <p class="hero-description mb-4">Curious about Machine Learning? Start your journey with us. Explore ML the fun way.</p>
+
+            <div class="cta-wrapper">
+              <a href="#about" class="btn btn-primary">Know More</a>
+            </div>
           </div>
+
         </div>
-      </div>
-    </header>
-    <!-- ====== Header End ====== -->
 
-    <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home" style="background:linear-gradient(to right, blue, purple);;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title">
-                Pythonic Sprint for Beginners
-              </h1>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- ====== Hero End ====== -->
 
-    <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
-      <div class="container">
-        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".1s">
-          <div class="ud-about-content-wrapper">
-            <div class="ud-about-content" style="max-width:100%;">
-              <h2>Event Details</h2>
-              <p><i class="lni lni-target-customer"></i> 24-batch students, Python beginners are the target participants<br>
-              <i class="lni lni-map-marker"></i> Online
-              </p>
-              <p>
-There will be <b>3 tasks released on 2nd Oct, 3rd Oct and 4th Oct.</b> This will be a mix of auto-graded MCQs, SATQs and a few LATQs which will be manually evaluated. Hints and documentation will be provided wherever necessary. Objective is to test logical reasoning instead of theoretical knowledge or memorisation.
-<br><br>
-These tasks will be <b>due on 6th Oct, 7th Oct and 8th Oct respectively.</b>
-<br><br>
-There will be an <b>additional bonus hands-on activity</b> on 13th Oct that needs to be done in Google Colab repository. This will be scheduled for only those who fall short of the cut-off points for appreciation OR the minimum participation% cut-off after task-3.
-<br><br>
-<b>Cut-off/Minimum Requirements</b>
+    </section><!-- /Hero Section -->
 
-<li>75% for Appreciation (including hands-on activity if applicable)</li>  
-<li>At least 2 tasks need to be submitted (including hands-on activity if applicable)</li>
-<br><br>
-<b>Milestones</b>
-<br><br>
-1. At least 2 out of the first 3 tasks submitted?
-<br>
-<b>YES</b>: Eligible for Participation certificate (now, move to rule 2)
-<br>
-<b>NO, Just 1 submitted:</b> Will be allowed to take bonus hands-on activity, if attempted, will get Participation cert.
-<br>
-<b>NO, None submitted:</b> Won’t be eligible for participation cert/bonus attempt.
-<br><br>
-2. <b>Eligible for Participation certificate?</b>
-<br>
-YES, total points>=75% (till task-3): Eligible for Appreciation cert.<br><br>
-YES, but total points<75% (till task-3): Will be allowed to take bonus hands-on activity -   
-If attempted, will get Appreciation cert provisional to final points>=75% after considering bonus scores (if points achieved >75, it will be considered/capped as/at 75 only since this is a 2nd chance to maximize the points).
-<br>
-If not attempted OR final points<75% even after considering bonus score, Participation certificate will be the final status.
-<br><br>
-<b>Understanding the bonus scoring</b>
-<br><br>
-One activity with 2 sub-tasks (1 point each)
-<br>
-Say, you secured 10.25/14 points (from the 14 problems in tasks 1-3) & got a score of 73.21 (final score ceiled to 74%) i.e. Participation certificate.<br>
-Now, if you do both the bonus activity perfectly and get 2 points, we will add this directly to your secured points out of 14 → your score becomes max(14,10.25+2) i.e. 12.25/14 → <b>final score becomes 88 (to be capped at 75) from 74</b> → you now get an appreciation certificate!
-<br><br>
-<b>Regarding submissions</b><br><br>  
-All tasks, activities, resources, solutions etc. will be released on our event portal.<br>
-We might NOT send reminder mails/notifications via mail at all times, it’s your responsibility to check at intervals and stay updated. However, our volunteers keep posting the updates via our discussion group.
-<br><br>
-Any questions? Feel free to drop an email at wayanad-ml@ds.study.iitm.ac.in.
-              </p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== About End ====== -->
+     <section id="about">
+<div class="container mt-5">
+  <div class="card shadow-sm mb-4">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Pythonic Sprint for Beginners</h2>
+      <p><strong>Target Audience:</strong> 24-batch students, Python beginners</p>
+      <p><strong>Mode:</strong> Online</p>
 
-    
+      <h5 class="mt-4">📅 Task Schedule</h5>
+      <ul>
+        <li><strong>Task 1:</strong> Released on 2nd Oct, due 6th Oct</li>
+        <li><strong>Task 2:</strong> Released on 3rd Oct, due 7th Oct</li>
+        <li><strong>Task 3:</strong> Released on 4th Oct, due 8th Oct</li>
+      </ul>
+      <p>Tasks include auto-graded MCQs, SATQs, and manually evaluated LATQs. Focus is on logical reasoning, not theory or memorization. Hints and documentation will be provided.</p>
 
-    <!-- ====== Footer Start ====== -->
-    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
-      <div class="shape shape-1">
-        <img src="/ml/assets/images/footer/shape-1.svg" alt="shape" />
-      </div>
-      <div class="shape shape-2">
-        <img src="/ml/assets/images/footer/shape-2.svg" alt="shape" />
-      </div>
-      <div class="shape shape-3">
-        <img src="/ml/assets/images/footer/shape-3.svg" alt="shape" />
-      </div>
-      <div class="ud-footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="ud-widget">
-                <span class="ud-footer-logo">
-                  ML Series, Wayanad House
-                </span>
-                <p class="ud-widget-desc">
-                 ML made fun!
-                </p>
-                <ul class="ud-widget-socials">
-                  <li>
-                    <a href="https://wayanad.iitmbs.org" target="_blank">
-                      <i class="lni lni-google"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/wayanad_iitm/" target="_blank">
-                      <i class="lni lni-instagram-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/iitm-wayanad-house/" target="_blank">
-                      <i class="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/@wayanadhouseiitm" target="_blank">
-                      <i class="lni lni-youtube"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://chat.whatsapp.com/HGA056Buywy9R6QHOPGmwe" target="_blank">
-                      <i class="lni lni-whatsapp"></i>
-                    </a>
-                  </li>
-                  <!--<li>
-                    <a href="https://twitter.com/wayanad_iitm" target="_blank">
-                      <i class="lni lni-twitter-filled"></i>
-                    </a>
-                  </li>-->
-                </ul>
-              </div>
-            </div>
+      <h5 class="mt-4">✨ Bonus Hands-on Activity</h5>
+      <p>
+        Scheduled on <strong>13th Oct</strong> in a Google Colab repository. Offered to:
+      </p>
+      <ul>
+        <li>Participants who fall short of 75% score for appreciation</li>
+        <li>Those who did not meet minimum task submission requirements</li>
+      </ul>
 
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Useful Links</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="/ml/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/ml/archives">Video Archives</a>
-                  </li>
-                  <li>
-                    <a href="/ml/gallery">Gallery</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">TnCs</h5>
-                <p><small>Disclaimer - This portal is hosted solely for the convenience of the student community, and the institute or IITM BS program does not endorse or assume responsibility for the content, products, or services provided here. Neither the institute nor the initiative members or house council or developer will be responsible for any issues arising if any from using this site. Accessing this site, you by-default agree to all TnCs.</small></p>
-                <ul class="ud-widget-links">
-                 
-                </ul>
-              </div>
-            </div>
+      <h5 class="mt-4">🎯 Cut-off & Minimum Requirements</h5>
+      <ul>
+        <li><strong>75%+</strong>: Eligible for Appreciation Certificate</li>
+        <li><strong>At least 2 tasks</strong> (including bonus if needed): Minimum for Participation Certificate</li>
+      </ul>
+
+      <h5 class="mt-4">🏁 Milestone Logic</h5>
+      <ol>
+        <li><strong>Submitted at least 2 out of 3 tasks?</strong><br>
+          <ul>
+            <li>Yes: Proceed to next rule</li>
+            <li>No (only 1 task): Bonus allowed; eligible for Participation cert upon completion</li>
+            <li>None: Not eligible for any certificate</li>
+          </ul>
+        </li>
+        <li><strong>Eligible for Participation Certificate?</strong><br>
+          <ul>
+            <li>If total points ≥ 75%: Gets Appreciation Certificate</li>
+            <li>If total points &lt; 75%: Bonus attempt allowed to improve score</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h5 class="mt-4">➕ Bonus Scoring Example</h5>
+      <p>Bonus has 2 sub-tasks (1 point each).</p>
+      <p>Example:</p>
+      <ul>
+        <li>Initial score: 10.25/14 → 73.21% → Rounded to 74% → Participation cert</li>
+        <li>Bonus score: +2 → New score: 12.25/14 → 88% (Capped at 75%) → Appreciation cert</li>
+      </ul>
+
+      <h5 class="mt-4">📢 Submission & Updates</h5>
+      <p>All materials will be released on our <strong>event portal</strong>. Regularly check the portal and our discussion group for updates. We may not send individual reminders.</p>
+
+      <h5 class="mt-4">📬 Contact</h5>
+      <p>For queries, email us at <a href="mailto:wayanad-ml@ds.study.iitm.ac.in">wayanad-ml@ds.study.iitm.ac.in</a></p>
+    </div>
+  </div>
+</div>
+     </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Feedback</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
            
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   Great initiative! Keep going, proud to be a part of this group. You guys are implementing the thoughts not just thinking or sitting idle.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Alwin VJ</h3>
+                      <h4>Pythonic Sprint Participant</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+
+<div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon"></i>
+                   Truly appreciate, this initiative is very interesting and engaging. Would love to participate in more such events.
+                  </p>
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16869/16869838.png" alt="Profile Image">
+                    <div>
+                      <h3>Sourav</h3>
+                      <h4>Pythonic Sprint Participant</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->          
+
+
             
           </div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
-      <div class="ud-footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                &copy; Wayanad House ML-Series Team
-                <!--<li>
-                  <a href="javascript:void(0)"></a>
-                </li>-->
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p class="ud-footer-bottom-right">
-                Template from
-                <a href="https://uideck.com" rel="nofollow" target="_blank">UIdeck</a>, Icon credits: Flaticon
-              </p>
-            </div>
-          </div>
-        </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2023-25 ML series team, All Rights Reserved</p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Logo credit: flaticon.com<br><br>
+        Note: This portal is hosted solely for the benefit of the student community, and the institute does not endorse or assume responsibility for the content, products, or services provided here. The ML Series team will be responsible for any issues, if any, after using this site. By accessing this site, you by-default agree to all TnCs.
       </div>
-    </footer>
-    <!-- ====== Footer End ====== -->
+    </div>
 
-    <!-- ====== Back To Top Start ====== -->
-    <a href="javascript:void(0)" class="back-to-top">
-      <i class="lni lni-chevron-up"> </i>
-    </a>
-    <!-- ====== Back To Top End ====== -->
+  </footer>
 
-    <!-- ====== All Javascript Files ====== -->
-    <script src="/ml/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/ml/assets/js/wow.min.js"></script>
-    <script src="/ml/assets/js/main.js"></script>
-    <script>
-      // ==== for menu scroll
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
-      });
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-    </script>
-    <script>
-  const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-</script>
-  </body>
+</body>
 </html>
